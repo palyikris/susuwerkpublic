@@ -1,0 +1,14 @@
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\bin\Debug\net7.0\bor.exe
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\bin\Debug\net7.0\bor.deps.json
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\bin\Debug\net7.0\bor.runtimeconfig.json
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\bin\Debug\net7.0\bor.dll
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\bin\Debug\net7.0\bor.pdb
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\net7.0\bor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\net7.0\bor.AssemblyInfoInputs.cache
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\net7.0\bor.AssemblyInfo.cs
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\net7.0\bor.csproj.CoreCompileInputs.cache
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\net7.0\bor.dll
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\net7.0\refint\bor.dll
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\net7.0\bor.pdb
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\net7.0\bor.genruntimeconfig.cache
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\net7.0\ref\bor.dll

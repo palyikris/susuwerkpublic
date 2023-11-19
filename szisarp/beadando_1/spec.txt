@@ -1,0 +1,5 @@
+Be: bemenet eleme 1 <= bemenet <= 1000
+Ki: kimenet eleme 0 <= kimenet <= 1000
+Ef.: -
+Uf.: kimenet = darab[i=1..bemenet, bemenet[i][0] > bemenet[i-1][0] és bemenet[i][0] > bemenet[i-1][1]]
+
