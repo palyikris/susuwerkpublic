@@ -58,7 +58,7 @@ takeWhile' f list = foldr(\x acc -> fst(span f x) ++ acc ) [] [list]
 
 
 dropWhile' :: (a -> Bool) -> [a] -> [a]
-dropWhile' f list = foldr(\x acc -> snd(span f x) ++ acc ) [] [list]
+dropWhile' f list = foldr(\x acc -> snd(span f x) ++ acc) [] [list]
 -- idea: put the input list in list
 -- idea: use span with the condition --> ([elems of takeWhile, elems of dropWhile])
 -- idea: add the second two acc
