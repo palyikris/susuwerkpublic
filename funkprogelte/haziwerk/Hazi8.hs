@@ -2,9 +2,6 @@ import Data.List
 
 -- todo: apply list of function on elements of lists of a list for Task 1
 apsOnLists :: [a -> b] -> [[a]] -> [[b]]
-apsOnLists [] _ = []
-apsOnLists _ [] = []
--- prompt: if one of the lists is empty, return empty list
 apsOnLists funcs lists = zipWith map funcs lists
 -- idea: otherwise apply the nth function to the elements of the nth list
 -- prompt: cuts off lists if longer than funcs
@@ -53,15 +50,22 @@ filter' f = foldr(\x acc -> helper f x acc) []
 -- prompt: same as map but only append x if fits the condition
 
 takeWhile' :: (a -> Bool) -> [a] -> [a]
-takeWhile' f list = foldr(\x acc -> fst(span f x) ++ acc ) [] [list]
--- prompt: instead of if else used the formula for dropWhile'
-
+takeWhile' f = foldr(\x acc -> helper f x acc) [] 
+    where
+        helper f x acc
+            | f x = x:acc
+            | otherwise = []
+-- prompt: check if predicate satisfied and add elements to acc
+-- prompt: after that stop adding
 
 dropWhile' :: (a -> Bool) -> [a] -> [a]
-dropWhile' f list = foldr(\x acc -> snd(span f x) ++ acc) [] [list]
--- idea: put the input list in list
--- idea: use span with the condition --> ([elems of takeWhile, elems of dropWhile])
--- idea: add the second two acc
+dropWhile' f list = foldr helper id list list
+    where 
+        helper x acc
+            | f x = tail . acc 
+            -- idea: this makes the function keep adding the elements until the elements satisfy f
+            | otherwise = id
+            -- idea: once an element does not satisfy f it includes de curr element and returns the list
 
 splitOn' :: (a -> Bool) -> [a] -> [[a]]
 splitOn' f = foldr (\x acc -> helper f x acc) [[]]
