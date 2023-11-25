@@ -50,13 +50,43 @@ showAMPM PM = "PM"
 
 showUSTime :: USTime -> String
 showUSTime (UST ampm h min) = (showAMPM ampm) ++ " " ++ show h ++ ":" ++ show min
+-- prompt: create format AM/PM H M
 
 -- todo: convert ust to t for Task 9
 ustimeToTime :: USTime -> Time
 ustimeToTime (UST ampm h min)
-    | ampm == AM = t h min
+    | ampm == AM = helper h min
+    | h == 12 = t h min
+    -- prompt: if hour is 12 and pm return unchanged
+    -- example: PM 12:30 --> 12:30
     | otherwise = t (h+12) min
+    -- prompt: if pm the hour just needs +12
+    -- example: PM 11:30 --> 23:30
+        where 
+            helper h min
+                | h == 12 = t 0 min
+                -- prompt: if its am and hour is 12 hour will be 0
+                -- example: AM 12:20 --> 0:20
+                | otherwise = t h min
+                -- prompt: otherwise return hour and minute
+                -- example: AM 11:30 --> 11:30
 
+
+-- todo: convert t to ust for Task 10
+timeToUSTime :: Time -> USTime
+timeToUSTime (T 0 min) = ustime AM 12 min
+-- prompt: if hour is 0 it needs to be an AM 12
+-- example: 0:10 --> AM 12:10
+timeToUSTime (T h min)
+    | h < 12 = ustime AM h min
+    -- prompt: if hour is less than 12, return unchanged
+    -- example: 11:20 --> AM 11:20
+    | h == 12 = ustime PM h min
+    -- prompt: if hour is 12 return it but pm
+    -- example: 12:12 --> PM 12:12
+    | otherwise = ustime PM (h-12) min
+    -- prompt: otherwise need to subtract 12 from hour
+    -- example: 14:10 --> PM 2:10
 
 
 
