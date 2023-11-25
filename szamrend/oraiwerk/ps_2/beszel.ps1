@@ -12,3 +12,4 @@ $voices | Select-Object -Property VoiceInfo | Export-Csv -Path "C:\Users\palyi\D
 $voices | Select-Object -Property VoiceInfo | Export-Csv -Path "C:\Users\palyi\Desktop\bullshitbundle\susuwerk\szamrend\oraiwerk\voices.csv" -NoTypeInformation | ConvertTo-Html
 
 
+ko
