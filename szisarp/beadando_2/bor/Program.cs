@@ -33,7 +33,7 @@ class Program
             // prompt: a spacenél szétválasztom a két értéket, hogy tudjak velük dolgozni és kiválasztom az árat
             int arSzam = int.Parse(ar);
 
-            if (arak.Contains(arSzam)) // idea: ha már volt ilyen ár, akkor növelem a kiSegedet
+            if (arak.Contains(arSzam))
             {
                 continue;
             }

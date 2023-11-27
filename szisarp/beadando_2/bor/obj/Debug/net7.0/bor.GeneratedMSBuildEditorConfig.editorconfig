@@ -9,3 +9,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = bor
 build_property.ProjectDir = C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

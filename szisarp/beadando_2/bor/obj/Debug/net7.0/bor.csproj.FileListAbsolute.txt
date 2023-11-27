@@ -12,3 +12,4 @@ C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\
 C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\net7.0\bor.pdb
 C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\net7.0\bor.genruntimeconfig.cache
 C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\net7.0\ref\bor.dll
+C:\Users\palyi\Desktop\bullshitBundle\susuwerk\szisarp\beadando_2\bor\obj\Debug\net7.0\bor.sourcelink.json

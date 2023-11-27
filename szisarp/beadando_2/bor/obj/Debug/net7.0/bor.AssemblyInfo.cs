@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62b8435aaca17925bbde18194c77ed823c25f070")]
 [assembly: System.Reflection.AssemblyProductAttribute("bor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
