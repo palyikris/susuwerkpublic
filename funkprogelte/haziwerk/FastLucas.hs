@@ -10,7 +10,7 @@ instance Num Lucas where
     L a b - L c d = L (a - c) (b - d)
     (L a b) * (L c d) = L (a * c + b * d * 5) (a * d + b * c)
     abs (L a b)
-        | (a + b * toRational(sqrt 5)) < 0 || (a + b * toRational(sqrt 5)) == 0 = L (a*(-1)) (b*(-1))
+        | (a + b * toRational(sqrt 5)) < 0 = L (a*(-1)) (b*(-1))
         | otherwise = L a b
     -- prompt: basic math
     signum (L a b)
