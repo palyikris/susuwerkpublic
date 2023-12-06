@@ -139,8 +139,12 @@ haskellBlast :: Army -> Army
 haskellBlast [] = []
 -- prompt: base case
 haskellBlast (unit1:unit2:unit3:unit4:unit5:unit6:army)
-    | (helper unit1) || (helper unit2) || (helper unit3) || (helper unit4) || helper (unit5) = haskellBlast (unit2:unit3:unit4:unit5:unit6:army)
-    | otherwise = haskellBlast (unit1:unit2:unit3:unit4:unit5:[])
+    -- idea: this condition is for checking whether the units can be wounded 5 dam
+    -- idea: cuz if not --> move the area one unit to the right
+    | (helper unit1) && (helper unit2) && (helper unit3) && (helper unit4) && helper (unit5) = haskellBlast (unit1:unit2:unit3:unit4:unit5:[]) ++ (unit6:army)
+    -- prompt: if the first 5 units can be wounded by 5 --> wound them and return them with the rest of the army
+    | otherwise = unit1 : haskellBlast (unit2:unit3:unit4:unit5:unit6:army)
+    -- prompt: otherwise --> move the area one unit to the rights
         where 
             helper (M (Alive (Master n h s))) = h >= 5
             helper (E (Alive (HaskellElemental h))) = h >= 5
@@ -148,7 +152,22 @@ haskellBlast (unit1:unit2:unit3:unit4:unit5:unit6:army)
             helper _ = False
 -- prompt: pattern match to at least 6 elements
 haskellBlast (unit:army) = wound (\x -> x-5) unit : haskellBlast army
--- prompt: rest of the cases --> wound by 5 --> doesnt have to look for more damage
+-- prompt: rest of the cases --> wound by 5 --> doesnt have to look for more damage --> wound those in list
 
+-- todo: create function for healing
+heal :: Unit -> Unit
+heal (M (Alive (Master n h s))) = M (Alive (Master n (h+1) s))
+heal (E (Alive (HaskellElemental h))) = E (Alive (HaskellElemental (h+1)))
+heal (E (Alive (Golem h))) = E (Alive (Golem (h+1)))
+heal unit = unit
+-- prompt: heal by 1 --> return the healed unit
+-- prompt: if unit is dead --> return dead unit
+
+multiHeal :: Health -> Army -> Army
+multiHeal 0 army = army
+multiHeal health (unit:army)
+    | unit == (M Dead) || unit == (E Dead) = unit : multiHeal health army
+    
+multiHeal _ _ = []
 
 
