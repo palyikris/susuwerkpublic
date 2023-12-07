@@ -155,7 +155,7 @@ haskellBlast (unit:army) = wound (\x -> x-5) unit : haskellBlast army
 -- prompt: rest of the cases --> wound by 5 --> doesnt have to look for more damage --> wound those in list
 
 -- todo: create function for healing
-heal :: Unit -> Unit
+heal :: (Unit, Health) -> (Unit, Health)
 heal (M (Alive (Master n h s))) = M (Alive (Master n (h+1) s))
 heal (E (Alive (HaskellElemental h))) = E (Alive (HaskellElemental (h+1)))
 heal (E (Alive (Golem h))) = E (Alive (Golem (h+1)))
@@ -165,9 +165,7 @@ heal unit = unit
 
 multiHeal :: Health -> Army -> Army
 multiHeal 0 army = army
-multiHeal health (unit:army)
-    | unit == (M Dead) || unit == (E Dead) = unit : multiHeal health army
-    
-multiHeal _ _ = []
+multiHeal health [] = []
+multiHeal health army
 
 
