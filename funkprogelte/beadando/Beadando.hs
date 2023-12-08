@@ -107,6 +107,7 @@ wound spell (E (Alive (HaskellElemental h)))
 wound spell (M (Alive (Master n h s)))
     | spell h <= 0 = M (Dead)
     | otherwise = M (Alive (Master n (spell h) s))
+wound spell unit = unit
 -- prompt: this is the same for three diff types of units
 -- prompt: first check if spell kills unit --> return dead unit
 -- prompt: otherwise return alive unit with the health changed by the spell
@@ -155,7 +156,7 @@ haskellBlast (unit:army) = wound (\x -> x-5) unit : haskellBlast army
 -- prompt: rest of the cases --> wound by 5 --> doesnt have to look for more damage --> wound those in list
 
 -- todo: create function for healing
-heal :: (Unit, Health) -> (Unit, Health)
+heal :: Unit -> Unit
 heal (M (Alive (Master n h s))) = M (Alive (Master n (h+1) s))
 heal (E (Alive (HaskellElemental h))) = E (Alive (HaskellElemental (h+1)))
 heal (E (Alive (Golem h))) = E (Alive (Golem (h+1)))
@@ -163,9 +164,25 @@ heal unit = unit
 -- prompt: heal by 1 --> return the healed unit
 -- prompt: if unit is dead --> return dead unit
 
+isDead :: Unit -> Bool
+isDead (M Dead) = True
+isDead (E Dead) = True
+isDead _ = False
+-- prompt: check if unit is dead
+
+-- idea: this function iterates thru the army and heals the units that are alive
+-- idea: returns a tuple with the remaining health and the healed army
+armyHeal :: Health -> Army -> (Health, Army)
+armyHeal 0 army = (0, army)
+armyHeal health [] = (health, [])
+armyHeal health (unit:army)
+    | not (isDead unit) = (fst (armyHeal (health-1) army), heal unit : snd (armyHeal (health-1) army))
+    | otherwise = (fst (armyHeal health army), unit : snd (armyHeal health army))
+
+-- idea: this function uses armyHeal to heal the army multiple times --> unitl the health is 0
 multiHeal :: Health -> Army -> Army
 multiHeal 0 army = army
 multiHeal health [] = []
 multiHeal health army
-
-
+    | over army = army
+    | otherwise = multiHeal (fst (armyHeal health army)) (snd (armyHeal health army))
