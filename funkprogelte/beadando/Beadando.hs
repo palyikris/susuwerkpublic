@@ -131,7 +131,7 @@ fight ((M (Alive( Master n h s))):enemyArmy) (unit:army) = wound s unit : map (w
 -- idea: first unit is wounded in the beginning --> in map i can wound the rest while the fight happens
 
 -- ! cases when the enemy is alive
-fight (_:enemyArmy) (_:army) = fight enemyArmy army
+fight (_:enemyArmy) (unit:army) = unit : fight enemyArmy army
 -- prompt: only case left is when the enemy is dead
 -- idea: just skip
 
@@ -186,3 +186,19 @@ multiHeal health [] = []
 multiHeal health army
     | over army = army
     | otherwise = multiHeal (fst (armyHeal health army)) (snd (armyHeal health army))
+
+-- todo: create battle function
+battle :: Army -> EnemyArmy -> Maybe Army {- vagy Maybe EnemyArmy -}
+battle [] [] = Nothing
+-- prompt: obviously if both are empty --> return nothing
+battle [] enemyArmy = Just enemyArmy
+battle army [] = Just army
+-- prompt: if one army empty --> other one is the winner
+battle army enemyArmy
+    | over army = Just enemyArmy
+    | over enemyArmy = Just army
+    -- prompt: if one army is over --> the other one is the winner
+    | otherwise = battle (formationFix(multiHeal 20 (haskellBlast (fight enemyArmy army)))) (formationFix(fight army enemyArmy))
+    -- prompt: keep battling till one of the above happens
+    -- prompt: also my army gets blasted and healed each turn
+
