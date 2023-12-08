@@ -135,25 +135,55 @@ fight (_:enemyArmy) (unit:army) = unit : fight enemyArmy army
 -- prompt: only case left is when the enemy is dead
 -- idea: just skip
 
+
+
 -- todo: create blasting function
+getHealth :: Unit -> Health
+getHealth (E (Alive (Golem h))) = h
+getHealth (E (Alive (HaskellElemental h))) = h
+getHealth (M (Alive (Master _ h _))) = h
+getHealth _ = 0
+-- prompt: get the health prop of creature
+
+sumHealth :: Army -> Health
+sumHealth [] = 0
+sumHealth (unit:army) = helper((getHealth unit) >= 5) + sumHealth army
+    where
+        helper True = 1
+        helper False = 0
+-- prompt: number of elements with health >= 5
+
+getArea :: Int -> Army -> Army
+getArea 0 army = []
+getArea n [] = []
+getArea n army = take 5 (drop n army) 
+-- prompt: get the 5 elements starting from the nth element
+
+findArea :: Army -> Int
+findArea (u1:u2:u3:u4:u5:u6:army) = helper 0 0 (sumHealth (u1:u2:u3:u4:u5:[])) (getArea 0 army) (u1:u2:u3:u4:u5:u6:army)
+    where
+        helper _ maxIndex _ [_,_,_,_] _ = maxIndex
+        -- prompt: stop if there are less than 5 elements left
+        helper currIndex maxIndex maxHealth currArea army
+            | maxHealth >= 5 = maxIndex
+            -- prompt: this case is the best it can be --> stop
+            | maxHealth < (sumHealth currArea) = helper (currIndex+1) currIndex (sumHealth currArea) (getArea (currIndex+1) army) army
+            -- prompt: if the current area is better --> update the max
+            | otherwise = helper (currIndex+1) maxIndex maxHealth (getArea (currIndex+1) army) army
+            -- prompt: otherwise keep going
+findArea _ = 0
+-- prompt: if area length <= 5 --> return 0
+
 haskellBlast :: Army -> Army
 haskellBlast [] = []
 -- prompt: base case
-haskellBlast (unit1:unit2:unit3:unit4:unit5:unit6:army)
-    -- idea: this condition is for checking whether the units can be wounded 5 dam
-    -- idea: cuz if not --> move the area one unit to the right
-    | (helper unit1) && (helper unit2) && (helper unit3) && (helper unit4) && helper (unit5) = haskellBlast (unit1:unit2:unit3:unit4:unit5:[]) ++ (unit6:army)
-    -- prompt: if the first 5 units can be wounded by 5 --> wound them and return them with the rest of the army
-    | otherwise = unit1 : haskellBlast (unit2:unit3:unit4:unit5:unit6:army)
-    -- prompt: otherwise --> move the area one unit to the rights
-        where 
-            helper (M (Alive (Master n h s))) = h >= 5
-            helper (E (Alive (HaskellElemental h))) = h >= 5
-            helper (E (Alive (Golem h))) = h >= 5
-            helper _ = False
--- prompt: pattern match to at least 6 elements
+haskellBlast (unit1:unit2:unit3:unit4:unit5:unit6:army) = fst(splitAt (findArea (unit1:unit2:unit3:unit4:unit5:unit6:army)) (unit1:unit2:unit3:unit4:unit5:unit6:army)) ++ (haskellBlast (take 5 (snd(splitAt (findArea (unit1:unit2:unit3:unit4:unit5:unit6:army)) (unit1:unit2:unit3:unit4:unit5:unit6:army))))) ++ (drop 5 (snd(splitAt (findArea (unit1:unit2:unit3:unit4:unit5:unit6:army)) (unit1:unit2:unit3:unit4:unit5:unit6:army))))
+-- idea: this seems nasty but the gist:
+-- idea: find the starting index of the best area
+-- idea: split the army into two parts
+-- idea: first untouched ++ wounded second(five elements long) ++ untouched second
 haskellBlast (unit:army) = wound (\x -> x-5) unit : haskellBlast army
--- prompt: rest of the cases --> wound by 5 --> doesnt have to look for more damage --> wound those in list
+-- prompt: if army length <= 5 --> just wound all by 5
 
 -- todo: create function for healing
 heal :: Unit -> Unit
@@ -195,6 +225,8 @@ battle [] enemyArmy = Just enemyArmy
 battle army [] = Just army
 -- prompt: if one army empty --> other one is the winner
 battle army enemyArmy
+    | over army && over enemyArmy = Nothing
+    -- prompt: if both are over --> return nothing
     | over army = Just enemyArmy
     | over enemyArmy = Just army
     -- prompt: if one army is over --> the other one is the winner
