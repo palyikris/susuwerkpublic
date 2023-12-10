@@ -147,11 +147,12 @@ getHealth _ = 0
 
 sumHealth :: Army -> Health
 sumHealth [] = 0
-sumHealth (unit:army) = helper((getHealth unit) >= 5) + sumHealth army
-    where
-        helper True = 1
-        helper False = 0
--- prompt: number of elements with health >= 5
+sumHealth (unit:army)
+    | unit == (E Dead) = 0 + sumHealth army
+    | unit == (M Dead) = 0 + sumHealth army
+    | getHealth(unit) > 5 = 5 + sumHealth army
+    | otherwise = getHealth(unit) + sumHealth army
+-- prompt: sum the dam that can be done to segment
 
 getArea :: Int -> Army -> Army
 getArea 0 army = []
@@ -165,7 +166,7 @@ findArea (u1:u2:u3:u4:u5:u6:army) = helper 0 0 (sumHealth (u1:u2:u3:u4:u5:[])) (
         helper _ maxIndex _ [_,_,_,_] _ = maxIndex
         -- prompt: stop if there are less than 5 elements left
         helper currIndex maxIndex maxHealth currArea army
-            | maxHealth >= 5 = maxIndex
+            | maxHealth >= 25 = maxIndex
             -- prompt: this case is the best it can be --> stop
             | maxHealth < (sumHealth currArea) = helper (currIndex+1) currIndex (sumHealth currArea) (getArea (currIndex+1) army) army
             -- prompt: if the current area is better --> update the max
@@ -215,6 +216,7 @@ multiHeal 0 army = army
 multiHeal health [] = []
 multiHeal health army
     | over army = army
+    | health <= 0 = army
     | otherwise = multiHeal (fst (armyHeal health army)) (snd (armyHeal health army))
 
 -- todo: create battle function
@@ -233,4 +235,7 @@ battle army enemyArmy
     | otherwise = battle (formationFix(multiHeal 20 (haskellBlast (fight enemyArmy army)))) (formationFix(fight army enemyArmy))
     -- prompt: keep battling till one of the above happens
     -- prompt: also my army gets blasted and healed each turn
+
+
+
 
