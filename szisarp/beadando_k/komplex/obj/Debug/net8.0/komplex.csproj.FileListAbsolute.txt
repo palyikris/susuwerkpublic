@@ -1,0 +1,15 @@
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\bin\Debug\net8.0\komplex.exe
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\bin\Debug\net8.0\komplex.deps.json
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\bin\Debug\net8.0\komplex.runtimeconfig.json
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\bin\Debug\net8.0\komplex.dll
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\bin\Debug\net8.0\komplex.pdb
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\obj\Debug\net8.0\komplex.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\obj\Debug\net8.0\komplex.AssemblyInfoInputs.cache
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\obj\Debug\net8.0\komplex.AssemblyInfo.cs
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\obj\Debug\net8.0\komplex.csproj.CoreCompileInputs.cache
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\obj\Debug\net8.0\komplex.sourcelink.json
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\obj\Debug\net8.0\komplex.dll
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\obj\Debug\net8.0\refint\komplex.dll
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\obj\Debug\net8.0\komplex.pdb
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\obj\Debug\net8.0\komplex.genruntimeconfig.cache
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\szisarp\beadando_k\komplex\obj\Debug\net8.0\ref\komplex.dll
