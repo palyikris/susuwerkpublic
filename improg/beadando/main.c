@@ -186,6 +186,7 @@ int main()
             break;
 
         case 5:
+            free(matrix);
             break;
 
         case 6:
