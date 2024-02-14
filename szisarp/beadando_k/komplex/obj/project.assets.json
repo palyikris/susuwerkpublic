@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\szisarp\\beadando_k\\komplex\\komplex.csproj",
+      "projectUniqueName": "C:\\Users\\palyi\\OneDrive\\Desktop\\bullshitBundle\\susuwerkpublic\\szisarp\\beadando_k\\komplex\\komplex.csproj",
       "projectName": "komplex",
-      "projectPath": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\szisarp\\beadando_k\\komplex\\komplex.csproj",
+      "projectPath": "C:\\Users\\palyi\\OneDrive\\Desktop\\bullshitBundle\\susuwerkpublic\\szisarp\\beadando_k\\komplex\\komplex.csproj",
       "packagesPath": "C:\\Users\\palyi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\szisarp\\beadando_k\\komplex\\obj\\",
+      "outputPath": "C:\\Users\\palyi\\OneDrive\\Desktop\\bullshitBundle\\susuwerkpublic\\szisarp\\beadando_k\\komplex\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\palyi\\AppData\\Roaming\\NuGet\\NuGet.Config"
