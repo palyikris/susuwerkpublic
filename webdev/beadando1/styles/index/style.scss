@@ -1,0 +1,114 @@
+@import "../uniform/uniform";
+
+@include basics();
+
+body {
+
+  header {
+
+    @include header();
+  }
+
+  #tartalom {
+    @include centerDiv(column);
+    padding: 10rem 0;
+
+    .specialty {
+      @include centerDiv(row);
+
+      .text {
+        @include centerDiv(column);
+        justify-content: flex-start;
+
+        h1 {
+          font-size: 3.5em;
+          padding-bottom: 5rem;
+          text-align: center;
+          width: 80%;
+          text-decoration: dotted underline $main;
+
+          span {
+            color: $main;
+          }
+        }
+
+        p {
+          text-align: justify;
+          width: 70%;
+          margin: .5rem 0;
+        }
+      }
+
+      .video {
+        @include centerDiv(row);
+
+        video {
+          width: 70%;
+          border-radius: 10px;
+          box-shadow: 0 0 10px 2px rgba($main, 0.5);
+          border: 1px solid white;
+        }
+      }
+    }
+
+    .reviewsWrapper {
+      @include centerDiv(column);
+
+      .title {
+        @include centerDiv(column);
+
+        h1 {
+          font-size: 3.5em;
+          padding-bottom: 5rem;
+          text-align: center;
+          width: 80%;
+          text-decoration: dotted underline $main;
+
+          span {
+            color: $main;
+          }
+        }
+      }
+
+      .reviews {
+        @include centerDiv(row);
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10rem;
+
+        .review {
+          @include centerDiv(column);
+          justify-content: flex-end;
+          width: 20rem;
+          height: 25rem;
+          border-radius: 10px;
+          box-shadow: 0 0 10px 5px rgba($main, 0.5);
+
+          p {
+            background-color: white;
+            height: 10rem;
+            color: $bg;
+            font-weight: bold;
+            text-align: center;
+            @include centerDiv(column);
+            padding: 1rem;
+            border-radius: 0 0 10px 10px;
+            font-style: italic;
+          }
+
+          &:nth-child(1) {
+            @include centerImg("../../public/card1.jpg");
+          }
+
+          &:nth-child(2) {
+            @include centerImg("../../public/card2.jfif");
+          }
+
+          &:nth-child(3) {
+            @include centerImg("../../public/card3.webp");
+          }
+        }
+      }
+    }
+  }
+}

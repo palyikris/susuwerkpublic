@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #002233;
+  color: white;
+}
+
+.sep {
+  margin: 15rem 0;
+  width: 70%;
+  height: 1px;
+  background-color: white;
+  position: relative;
+}
+.sep::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #8FD476;
+  border-radius: 100%;
+  left: calc(50% - 10px);
+  bottom: calc(50% - 10px);
+}
+
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../public/celerybg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../public/celerybg1.png");
+}
+body header .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body header .hero h1 {
+  font-size: 4.5em;
+}
+body header .hero h1 span {
+  color: #8FD476;
+}
+body header .hero h5 {
+  width: 30%;
+  text-align: center;
+}
+body header .hero h5 span {
+  color: #8FD476;
+}
+body header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 1rem;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+body header nav a {
+  margin: 0 2rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+}
+body header nav a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -5px;
+  width: 0;
+  transition: all 0.5s;
+}
+body header nav a:nth-child(1) {
+  color: #8FD476;
+  opacity: 0.8;
+}
+body header nav a:nth-child(1)::after {
+  background-color: #8FD476;
+}
+body header nav a:hover {
+  transform: scale(1.05);
+}
+body header nav a:hover::after {
+  width: 100%;
+}
+body header nav a:nth-child(2) {
+  color: #8FD476;
+  opacity: 0.8;
+}
+body header nav a:nth-child(2)::after {
+  background-color: #8FD476;
+}
+body header nav a:nth-child(1) {
+  color: white;
+  opacity: 1;
+}
+body header nav a:nth-child(1)::after {
+  background-color: white;
+}
+body #tartalom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 15rem 0;
+}
+body #tartalom .stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  width: 100%;
+}
+body #tartalom .stage .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  width: 40%;
+}
+body #tartalom .stage .text h1 {
+  font-size: 3.5em;
+  padding-bottom: 5rem;
+  text-align: center;
+  width: 80%;
+  -webkit-text-decoration: dotted underline #8FD476;
+          text-decoration: dotted underline #8FD476;
+}
+body #tartalom .stage .text h1 span {
+  color: #8FD476;
+}
+body #tartalom .stage .text p {
+  text-align: justify;
+  width: 70%;
+  margin: 0.5rem 0;
+}
+body #tartalom .stage .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  width: 40%;
+}
+body #tartalom .stage .img img {
+  height: 20rem;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(143, 212, 118, 0.5);
+  border: 1px solid white;
+}
+body #tartalom #stage-2 {
+  flex-direction: row-reverse;
+}/*# sourceMappingURL=style.css.map */

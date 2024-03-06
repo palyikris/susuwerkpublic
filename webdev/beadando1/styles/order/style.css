@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #002233;
+  color: white;
+}
+
+.sep {
+  margin: 15rem 0;
+  width: 70%;
+  height: 1px;
+  background-color: white;
+  position: relative;
+}
+.sep::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #8FD476;
+  border-radius: 100%;
+  left: calc(50% - 10px);
+  bottom: calc(50% - 10px);
+}
+
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../public/celerybg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../public/celerybg2.png");
+}
+body header .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body header .hero h1 {
+  font-size: 4.5em;
+}
+body header .hero h1 span {
+  color: #8FD476;
+}
+body header .hero h5 {
+  width: 30%;
+  text-align: center;
+}
+body header .hero h5 span {
+  color: #8FD476;
+}
+body header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 1rem;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+body header nav a {
+  margin: 0 2rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+}
+body header nav a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -5px;
+  width: 0;
+  transition: all 0.5s;
+}
+body header nav a:nth-child(1) {
+  color: #8FD476;
+  opacity: 0.8;
+}
+body header nav a:nth-child(1)::after {
+  background-color: #8FD476;
+}
+body header nav a:hover {
+  transform: scale(1.05);
+}
+body header nav a:hover::after {
+  width: 100%;
+}
+body header nav a:nth-child(3) {
+  color: #8FD476;
+  opacity: 0.8;
+}
+body header nav a:nth-child(3)::after {
+  background-color: #8FD476;
+}
+body header nav a:nth-child(1) {
+  color: white;
+  opacity: 1;
+}
+body header nav a:nth-child(1)::after {
+  background-color: white;
+}
+body header .hero h1 {
+  width: 40%;
+  text-align: center;
+  font-size: 4em;
+}
+body #tartalom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 15rem;
+  padding-bottom: 15rem;
+}
+body #tartalom form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  width: 60%;
+  border-radius: 10px;
+  border: 1px solid #8FD476;
+  padding-top: 5rem;
+}
+body #tartalom form .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10rem;
+}
+body #tartalom form .title h1 {
+  font-size: 4.5em;
+  -webkit-text-decoration: dotted underline #8FD476;
+          text-decoration: dotted underline #8FD476;
+}
+body #tartalom form .userData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body #tartalom form .userData .data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+body #tartalom form .userData .data label {
+  width: 30%;
+  text-align: right;
+  margin-right: 5rem;
+  text-align: left;
+  font-size: 1.2em;
+}
+body #tartalom form .userData .data input,
+body #tartalom form .userData .data select {
+  width: 30%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 3px solid #8FD476;
+  outline: none;
+}
+body #tartalom form .userData .data select {
+  color: #8FD476;
+}
+body #tartalom form .delData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body #tartalom form .delData .data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+body #tartalom form .delData .data label {
+  width: 30%;
+  text-align: right;
+  margin-right: 5rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
+body #tartalom form .delData .data input {
+  outline: none;
+  margin: 1rem 0;
+}
+body #tartalom form .delData .dataSub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 5rem;
+}
+body #tartalom form .delData .dataSub input {
+  margin-right: 1rem;
+}
+body #tartalom form .delData .dataSub label {
+  -webkit-text-decoration: dotted underline #8FD476;
+          text-decoration: dotted underline #8FD476;
+}
+body #tartalom form .delData .dataSub label span {
+  color: #8FD476;
+}
+body #tartalom form .noteData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body #tartalom form .noteData .data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+body #tartalom form .noteData .data label {
+  width: 30%;
+  text-align: right;
+  margin-right: 5rem;
+  text-align: left;
+  font-size: 1.2em;
+}
+body #tartalom form .noteData .data textarea {
+  width: 30%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 3px solid #8FD476;
+  outline: none;
+}
+body #tartalom form .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 5rem;
+}
+body #tartalom form .buttons button {
+  margin: 0 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+body #tartalom form .buttons button:nth-child(1) {
+  background-color: #8FD476;
+  color: white;
+}
+body #tartalom form .buttons button:nth-child(1):hover {
+  background-color: white;
+  color: #8FD476;
+}
+body #tartalom form .buttons button:nth-child(2) {
+  background-color: white;
+  color: #8FD476;
+}
+body #tartalom form .buttons button:nth-child(2):hover {
+  background-color: #8FD476;
+  color: white;
+}
+
+.sep {
+  margin: 5rem 0;
+}/*# sourceMappingURL=style.css.map */

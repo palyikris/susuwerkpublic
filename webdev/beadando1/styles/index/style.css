@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #002233;
+  color: white;
+}
+
+.sep {
+  margin: 15rem 0;
+  width: 70%;
+  height: 1px;
+  background-color: white;
+  position: relative;
+}
+.sep::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #8FD476;
+  border-radius: 100%;
+  left: calc(50% - 10px);
+  bottom: calc(50% - 10px);
+}
+
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../public/celerybg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body header .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body header .hero h1 {
+  font-size: 4.5em;
+}
+body header .hero h1 span {
+  color: #8FD476;
+}
+body header .hero h5 {
+  width: 30%;
+  text-align: center;
+}
+body header .hero h5 span {
+  color: #8FD476;
+}
+body header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 1rem;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+body header nav a {
+  margin: 0 2rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+}
+body header nav a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -5px;
+  width: 0;
+  transition: all 0.5s;
+}
+body header nav a:nth-child(1) {
+  color: #8FD476;
+  opacity: 0.8;
+}
+body header nav a:nth-child(1)::after {
+  background-color: #8FD476;
+}
+body header nav a:hover {
+  transform: scale(1.05);
+}
+body header nav a:hover::after {
+  width: 100%;
+}
+body #tartalom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10rem 0;
+}
+body #tartalom .specialty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+body #tartalom .specialty .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+}
+body #tartalom .specialty .text h1 {
+  font-size: 3.5em;
+  padding-bottom: 5rem;
+  text-align: center;
+  width: 80%;
+  -webkit-text-decoration: dotted underline #8FD476;
+          text-decoration: dotted underline #8FD476;
+}
+body #tartalom .specialty .text h1 span {
+  color: #8FD476;
+}
+body #tartalom .specialty .text p {
+  text-align: justify;
+  width: 70%;
+  margin: 0.5rem 0;
+}
+body #tartalom .specialty .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+body #tartalom .specialty .video video {
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(143, 212, 118, 0.5);
+  border: 1px solid white;
+}
+body #tartalom .reviewsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body #tartalom .reviewsWrapper .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body #tartalom .reviewsWrapper .title h1 {
+  font-size: 3.5em;
+  padding-bottom: 5rem;
+  text-align: center;
+  width: 80%;
+  -webkit-text-decoration: dotted underline #8FD476;
+          text-decoration: dotted underline #8FD476;
+}
+body #tartalom .reviewsWrapper .title h1 span {
+  color: #8FD476;
+}
+body #tartalom .reviewsWrapper .reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+}
+body #tartalom .reviewsWrapper .reviews .review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(143, 212, 118, 0.5);
+}
+body #tartalom .reviewsWrapper .reviews .review p {
+  background-color: white;
+  height: 10rem;
+  color: #002233;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+  font-style: italic;
+}
+body #tartalom .reviewsWrapper .reviews .review:nth-child(1) {
+  background-image: url("../../public/card1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body #tartalom .reviewsWrapper .reviews .review:nth-child(2) {
+  background-image: url("../../public/card2.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body #tartalom .reviewsWrapper .reviews .review:nth-child(3) {
+  background-image: url("../../public/card3.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=style.css.map */

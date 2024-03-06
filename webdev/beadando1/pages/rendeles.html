@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZellerGuru - Rendelés</title>
+  <meta name="description" content="A ZellerGuru Magyarország legfeltörekvőbb zellertermesztője és szállítója.">
+  <meta name="keywords" content="zeller, zellerguru, guru, zellertermesztes, zellerszállítás">
+  <link rel="stylesheet" href="../styles/order/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/index.html">Főoldal</a><a href="/pages/rolunk.html">Rólunk</a><a
+        href="/pages/rendeles.html">Rendelés</a><a href="kapcsolat.html">Kapcsolat</a>
+    </nav>
+    <section class="hero">
+      <h1><span>R</span>endelj tőlünk <span>most</span>!</h1>
+      <h5>
+        Rendelj nálunk és a kiszállítás 5 munkanap alatt garantáltan megérkezik. Ha bármi probléma adódna a szállítással
+        kapcsolatban, nyugodtan írj nekünk vagy keresd ügyfélszolgálatunkat. <span>#wezellit</span>
+      </h5>
+    </section>
+  </header>
+  <main id="tartalom">
+    <form id="rendeles" action="mailto:ugyfelszolg@zellerguru.hu">
+      <section class="title">
+        <h1>Rendelésed</h1>
+      </section>
+      <section class="userData">
+        <div class="data">
+          <label for="rendeles">Zellertípus:</label>
+          <select name="celtype" id="celtype">
+              <option value="">Válassz!</option>
+              <option value="king">Zellerek királya</option>
+              <option value="green">Zöld szépség</option>
+              <option value="warrior">Frissítő Harcos</option>
+              <option value="sup">Zeller Szupremum</option>
+          </select>
+        </div>
+        <div class="data">
+          <label for="rendeles">Lakcím:</label>
+          <input type="text" id="address" name="address" placeholder="Isz., helység, utca, hsz." required>
+        </div>
+        <div class="data">
+          <label for="rendeles">Név:</label>
+          <input type="text" id="name" name="name" placeholder="Pl.: Példa János" required>
+        </div>
+      </section>
+      <div class="sep"></div>
+      <section class="delData">
+        <div class="data">
+          <label for="rendeles">Kiszállítás:</label>
+          <div class="radios">
+            <div class="radio">
+              <input type="radio" id="delivery" name="delivery" value="home" checked>
+              <label for="rendeles">Házhoz</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="delivery1" name="delivery" value="pickup">
+              <label for="rendeles">Csomagpont</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="delivery2" name="delivery" value="post">
+              <label for="rendeles">Raktár</label>
+            </div>
+          </div>
+        </div>
+        <div class="dataSub">
+          <input type="checkbox" name="sub" id="sub">
+          <label for="rendeles">Feliratkozás <span>hírlevelünkre</span></label>
+        </div>
+      </section>
+      <div class="sep"></div>
+      <section class="noteData">
+        <div class="data">
+          <label for="rendeles">Ami benned maradt...</label>
+          <textarea name="note" id="note" cols="30" rows="10" placeholder="Pl.: Kérem, hogy a zellereket ne csomagolják
+            műanyagba."></textarea>
+        </div>
+      </section>
+      <section class="buttons">
+        <button type="submit">Megrendelem</button>
+        <button type="reset">Törlés</button>
+      </section>
+    </form>
+  </main>
+</body>
+</html>

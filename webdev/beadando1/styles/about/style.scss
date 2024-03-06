@@ -1,0 +1,86 @@
+@import "../uniform/uniform";
+
+@include basics();
+
+
+body {
+  header {
+    @include header();
+    background-image: url("../../public/celerybg1.png");
+
+    nav {
+      a {
+        &:nth-child(2) {
+          color: $main;
+          opacity: .8;
+
+          &::after {
+            background-color: $main;
+          }
+        }
+
+        &:nth-child(1) {
+          color: white;
+          opacity: 1;
+
+          &::after {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+
+  #tartalom {
+    @include centerDiv(column);
+    padding: 15rem 0;
+
+    .stage {
+      @include centerDiv(row);
+      justify-content: space-around;
+      width: 100%;
+
+      .text {
+        @include centerDiv(column);
+        justify-content: flex-start;
+        width: 40%;
+
+        h1 {
+          font-size: 3.5em;
+          padding-bottom: 5rem;
+          text-align: center;
+          width: 80%;
+          text-decoration: dotted underline $main;
+
+          span {
+            color: $main;
+          }
+        }
+
+        p {
+          text-align: justify;
+          width: 70%;
+          margin: .5rem 0;
+        }
+      }
+
+      .img {
+        @include centerDiv(column);
+        width: 40%;
+
+        img {
+          height: 20rem;
+          width: 90%;
+          border-radius: 10px;
+          box-shadow: 0 0 10px 2px rgba($main, 0.5);
+          border: 1px solid white;
+        }
+      }
+    }
+
+    #stage-2 {
+      flex-direction: row-reverse;
+
+    }
+  }
+}

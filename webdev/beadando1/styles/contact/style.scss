@@ -1,0 +1,178 @@
+@import "../uniform/uniform";
+
+@include basics();
+
+body {
+  header {
+    @include header();
+    background-image: none;
+    height: auto;
+    padding: 10rem 0;
+
+    nav {
+      border-bottom: 1px solid $main;
+      border-right: 1px solid $main;
+      border-radius: 0 0 10px 0;
+      width: auto;
+
+      a {
+        &:nth-child(4) {
+          color: $main;
+          opacity: .8;
+
+          &::after {
+            background-color: $main;
+          }
+        }
+
+        &:nth-child(1) {
+          color: white;
+          opacity: 1;
+
+          &::after {
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+
+  #tartalom {
+    @include centerDiv(column);
+
+    .tableWrapper {
+      @include centerDiv(column);
+      width: 70%;
+      border-radius: 10px;
+      height: auto;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $main;
+        border-radius: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+
+        th,
+        td {
+          background-color: $bg;
+          padding: 1rem;
+          text-align: center;
+          border: 1px solid $main;
+
+          &:nth-child(1) {
+            border-left: none;
+          }
+
+          &:nth-child(3) {
+            border-right: none;
+          }
+
+          svg {
+            width: 1.5rem;
+            color: $main;
+          }
+
+          span {
+            color: $main;
+          }
+        }
+
+        th {
+          color: $main;
+          font-size: 3em;
+          text-decoration: dotted underline white;
+          border-right: none;
+          border-top: none;
+        }
+
+        tr {
+          &:nth-child(3) {
+            td {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+
+    .message {
+      @include centerDiv(column);
+      padding-bottom: 15rem;
+
+      form {
+        @include centerDiv(column);
+        border: 1px solid $main;
+        border-radius: 10px;
+        width: 70%;
+        padding: 5rem 2rem;
+
+        .title {
+          @include centerDiv(row);
+          padding-bottom: 5rem;
+
+          h1 {
+            font-size: 3em;
+            text-decoration: dotted underline $main;
+            text-align: center;
+
+            span {
+              color: $main;
+            }
+          }
+        }
+
+        .messageArea {
+          @include centerDiv(column);
+          width: 100%;
+
+          textarea {
+            width: 60%;
+            height: 10rem;
+            border: 1px solid $main;
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 5rem;
+          }
+        }
+
+        .buttonWrapper {
+          @include centerDiv(row);
+
+          button {
+            width: 40%;
+            padding: 1rem;
+            border: 1px solid $main;
+            border-radius: 10px;
+            background-color: $main;
+            color: white;
+            font-size: 1.2em;
+            margin: 0 auto;
+            cursor: pointer;
+            transition: all .5s;
+
+            &:hover {
+              background-color: white;
+              color: $main;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sep {
+  margin: 10rem 0;
+}

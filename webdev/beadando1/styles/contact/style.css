@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #002233;
+  color: white;
+}
+
+.sep {
+  margin: 15rem 0;
+  width: 70%;
+  height: 1px;
+  background-color: white;
+  position: relative;
+}
+.sep::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #8FD476;
+  border-radius: 100%;
+  left: calc(50% - 10px);
+  bottom: calc(50% - 10px);
+}
+
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../public/celerybg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: none;
+  height: auto;
+  padding: 10rem 0;
+}
+body header .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body header .hero h1 {
+  font-size: 4.5em;
+}
+body header .hero h1 span {
+  color: #8FD476;
+}
+body header .hero h5 {
+  width: 30%;
+  text-align: center;
+}
+body header .hero h5 span {
+  color: #8FD476;
+}
+body header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 1rem;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+body header nav a {
+  margin: 0 2rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+}
+body header nav a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -5px;
+  width: 0;
+  transition: all 0.5s;
+}
+body header nav a:nth-child(1) {
+  color: #8FD476;
+  opacity: 0.8;
+}
+body header nav a:nth-child(1)::after {
+  background-color: #8FD476;
+}
+body header nav a:hover {
+  transform: scale(1.05);
+}
+body header nav a:hover::after {
+  width: 100%;
+}
+body header nav {
+  border-bottom: 1px solid #8FD476;
+  border-right: 1px solid #8FD476;
+  border-radius: 0 0 10px 0;
+  width: auto;
+}
+body header nav a:nth-child(4) {
+  color: #8FD476;
+  opacity: 0.8;
+}
+body header nav a:nth-child(4)::after {
+  background-color: #8FD476;
+}
+body header nav a:nth-child(1) {
+  color: white;
+  opacity: 1;
+}
+body header nav a:nth-child(1)::after {
+  background-color: white;
+}
+body #tartalom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body #tartalom .tableWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  width: 70%;
+  border-radius: 10px;
+  height: auto;
+  position: relative;
+}
+body #tartalom .tableWrapper::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8FD476;
+  border-radius: 10px;
+}
+body #tartalom .tableWrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+body #tartalom .tableWrapper table th,
+body #tartalom .tableWrapper table td {
+  background-color: #002233;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #8FD476;
+}
+body #tartalom .tableWrapper table th:nth-child(1),
+body #tartalom .tableWrapper table td:nth-child(1) {
+  border-left: none;
+}
+body #tartalom .tableWrapper table th:nth-child(3),
+body #tartalom .tableWrapper table td:nth-child(3) {
+  border-right: none;
+}
+body #tartalom .tableWrapper table th svg,
+body #tartalom .tableWrapper table td svg {
+  width: 1.5rem;
+  color: #8FD476;
+}
+body #tartalom .tableWrapper table th span,
+body #tartalom .tableWrapper table td span {
+  color: #8FD476;
+}
+body #tartalom .tableWrapper table th {
+  color: #8FD476;
+  font-size: 3em;
+  -webkit-text-decoration: dotted underline white;
+          text-decoration: dotted underline white;
+  border-right: none;
+  border-top: none;
+}
+body #tartalom .tableWrapper table tr:nth-child(3) td {
+  border-bottom: none;
+}
+body #tartalom .message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 15rem;
+}
+body #tartalom .message form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #8FD476;
+  border-radius: 10px;
+  width: 70%;
+  padding: 5rem 2rem;
+}
+body #tartalom .message form .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+body #tartalom .message form .title h1 {
+  font-size: 3em;
+  -webkit-text-decoration: dotted underline #8FD476;
+          text-decoration: dotted underline #8FD476;
+  text-align: center;
+}
+body #tartalom .message form .title h1 span {
+  color: #8FD476;
+}
+body #tartalom .message form .messageArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  width: 100%;
+}
+body #tartalom .message form .messageArea textarea {
+  width: 60%;
+  height: 10rem;
+  border: 1px solid #8FD476;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+body #tartalom .message form .buttonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+body #tartalom .message form .buttonWrapper button {
+  width: 40%;
+  padding: 1rem;
+  border: 1px solid #8FD476;
+  border-radius: 10px;
+  background-color: #8FD476;
+  color: white;
+  font-size: 1.2em;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+body #tartalom .message form .buttonWrapper button:hover {
+  background-color: white;
+  color: #8FD476;
+}
+
+.sep {
+  margin: 10rem 0;
+}/*# sourceMappingURL=style.css.map */
