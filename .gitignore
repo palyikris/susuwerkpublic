@@ -1,1 +1,5 @@
 *.class
+*.jar
+*lab*/
+*.sh
+*.mp4

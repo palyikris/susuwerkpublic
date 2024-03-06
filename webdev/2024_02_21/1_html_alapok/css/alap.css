@@ -5,8 +5,13 @@
 /* kit�ltend� defin�ci�k */
 
 /*============== sz�veg igaz�t�sok ============= */
+h1{
+	font-size: 3em;
+}
+
 h1, footer p, figcaption, figure, video {
     text-align: center;
+		font-size: 1.5em;
 }
 
 p {

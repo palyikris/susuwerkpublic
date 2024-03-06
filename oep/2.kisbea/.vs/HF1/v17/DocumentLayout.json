@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\palyi\\OneDrive\\Desktop\\bullshitBundle\\susuwerkpublic\\oep\\2.kisbea\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3F0D04-F98C-4D63-8C4C-E70A927F3E7D}|HF1.csproj|c:\\users\\palyi\\onedrive\\desktop\\bullshitbundle\\susuwerkpublic\\oep\\2.kisbea\\rational.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F3F0D04-F98C-4D63-8C4C-E70A927F3E7D}|HF1.csproj|solutionrelative:rational.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3F0D04-F98C-4D63-8C4C-E70A927F3E7D}|HF1.csproj|c:\\users\\palyi\\onedrive\\desktop\\bullshitbundle\\susuwerkpublic\\oep\\2.kisbea\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F3F0D04-F98C-4D63-8C4C-E70A927F3E7D}|HF1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Rational.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\OneDrive\\Desktop\\bullshitBundle\\susuwerkpublic\\oep\\2.kisbea\\Rational.cs",
+              "RelativeDocumentMoniker": "Rational.cs",
+              "ToolTip": "C:\\Users\\palyi\\OneDrive\\Desktop\\bullshitBundle\\susuwerkpublic\\oep\\2.kisbea\\Rational.cs",
+              "RelativeToolTip": "Rational.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwCsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T17:58:33.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\OneDrive\\Desktop\\bullshitBundle\\susuwerkpublic\\oep\\2.kisbea\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\palyi\\OneDrive\\Desktop\\bullshitBundle\\susuwerkpublic\\oep\\2.kisbea\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T17:57:26.232Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
