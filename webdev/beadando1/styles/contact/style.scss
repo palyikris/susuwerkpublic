@@ -1,6 +1,5 @@
 @import "../uniform/uniform";
 
-@include basics();
 
 body {
   header {
@@ -8,6 +7,10 @@ body {
     background-image: none;
     height: auto;
     padding: 10rem 0;
+
+    &::before {
+      border: none;
+    }
 
     nav {
       border-bottom: 1px solid $main;
@@ -89,7 +92,7 @@ body {
           }
         }
 
-        th {
+        .th {
           color: $main;
           font-size: 3em;
           text-decoration: dotted underline white;
@@ -173,6 +176,111 @@ body {
   }
 }
 
+@include basics();
+
+
 .sep {
   margin: 10rem 0;
+}
+
+@media only screen and (max-width: 540px) {
+  body {
+    header {
+      nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        border: none;
+
+        a {
+          margin: 1rem 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    #tartalom {
+      .tableWrapper {
+        table {
+          .th {
+            font-size: 2em;
+          }
+        }
+      }
+
+      .message {
+        form {
+          .title {
+            h1 {
+              font-size: 2em;
+            }
+          }
+
+          .messageArea {
+            textarea {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    #tartalom {
+      .tableWrapper {
+        width: 90%;
+      }
+
+      .message {
+        form {
+          .buttonWrapper {
+            button {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    #tartalom {
+      .tableWrapper {
+        table {
+          tr {
+            td:nth-child(1) {
+              display: none;
+            }
+          }
+        }
+
+        &::after {
+          border-radius: 0;
+        }
+      }
+
+      .message {
+        form {
+          .messageArea {
+            textarea {
+              width: 100%;
+            }
+          }
+
+          .buttonWrapper {
+            button {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
 }

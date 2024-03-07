@@ -1,6 +1,5 @@
 @import "../uniform/uniform";
 
-@include basics();
 
 body {
 
@@ -196,6 +195,223 @@ body {
   }
 }
 
+@include basics();
+
+
 .sep {
   margin: 5rem 0;
+}
+
+@media only screen and (max-width: 870px) {
+  body {
+    #tartalom {
+      form {
+        width: 80%;
+
+        .title {
+          h1 {
+            font-size: 3.5em;
+          }
+        }
+
+        .userData {
+          .data {
+            label {
+              width: 40%;
+              margin-right: 2rem;
+            }
+
+            input,
+            select {
+              width: 40%;
+            }
+          }
+        }
+
+        .delData {
+          .data {
+            label {
+              width: 40%;
+              margin-right: 2rem;
+            }
+
+            input {
+              width: 40%;
+            }
+          }
+        }
+
+        .noteData {
+          .data {
+            label {
+              width: 40%;
+              margin-right: 2rem;
+            }
+
+            textarea {
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 640px) {
+  body {
+    #tartalom {
+      form {
+        width: 90%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+        .title {
+          h1 {
+            font-size: 3em;
+          }
+        }
+
+        .userData {
+          .data {
+            label {
+              width: 50%;
+              margin-right: 1rem;
+            }
+
+            input,
+            select {
+              width: 50%;
+            }
+          }
+        }
+
+        .delData {
+          .data {
+            label {
+              width: 50%;
+              margin-right: 1rem;
+            }
+
+            input {
+              width: 50%;
+            }
+          }
+        }
+
+        .noteData {
+          .data {
+            label {
+              width: 50%;
+              margin-right: 1rem;
+            }
+
+            textarea {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  body {
+    #tartalom {
+      form {
+        .userData {
+          .data {
+            flex-direction: column;
+
+            label {
+              width: 100%;
+              margin-right: 0;
+            }
+
+            input,
+            select {
+              width: 100%;
+            }
+          }
+        }
+
+        .delData {
+
+          .data {
+            flex-direction: column;
+
+            label {
+              margin-right: 0;
+              text-align: center;
+            }
+
+            input {
+              width: 50%;
+            }
+
+            .radios {
+              @include centerDiv(row);
+              margin-top: 3rem;
+              flex-wrap: wrap;
+
+              .radio {
+                @include centerDiv(column);
+                width: auto;
+                margin: 2rem 1rem;
+
+
+                label {
+                  text-align: center;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+
+        .noteData {
+          .data {
+            flex-direction: column;
+
+            label {
+              width: 100%;
+              margin-right: 0;
+              text-align: center;
+              margin-bottom: 5rem;
+            }
+
+            textarea {
+              width: 100%;
+            }
+          }
+        }
+
+        .buttons {
+          flex-direction: column;
+          margin: 3rem 0;
+
+          button {
+            margin: 1rem 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 460px) {
+  body {
+    header {
+      .hero {
+        h1 {
+          width: 80%;
+          font-size: 3em;
+        }
+      }
+    }
+  }
 }

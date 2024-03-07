@@ -1,7 +1,5 @@
 @import "../uniform/uniform";
 
-@include basics();
-
 
 body {
   header {
@@ -81,6 +79,37 @@ body {
     #stage-2 {
       flex-direction: row-reverse;
 
+    }
+  }
+}
+
+@include basics();
+
+
+@media only screen and (max-width: 555px) {
+  body {
+    #tartalom {
+      padding: 10rem 0;
+
+      .stage,
+      #stage-2 {
+        flex-direction: column;
+        width: 90%;
+
+        .text {
+          width: 100%;
+          padding-bottom: 5rem;
+        }
+
+        .img {
+          width: 90%;
+
+          img {
+            height: 15rem;
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }

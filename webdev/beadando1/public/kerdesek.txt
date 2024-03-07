@@ -1,0 +1,2 @@
+A menüsor felül, vagy bal oldalon helyezkedik el, megfelelően
+elkülönül a tartalomtól (pl. színezett hátterű)

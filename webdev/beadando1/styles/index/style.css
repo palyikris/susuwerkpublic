@@ -1,36 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Madimi One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-body {
-  background-color: #002233;
-  color: white;
-}
-
-.sep {
-  margin: 15rem 0;
-  width: 70%;
-  height: 1px;
-  background-color: white;
-  position: relative;
-}
-.sep::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #8FD476;
-  border-radius: 100%;
-  left: calc(50% - 10px);
-  bottom: calc(50% - 10px);
-}
-
 body header {
   display: flex;
   justify-content: center;
@@ -42,6 +10,16 @@ body header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
+}
+body header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -1rem;
+  border-bottom: 5px dotted #8FD476;
 }
 body header .hero {
   display: flex;
@@ -212,7 +190,7 @@ body #tartalom .reviewsWrapper .reviews .review p {
   height: 10rem;
   color: #002233;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,4 +217,82 @@ body #tartalom .reviewsWrapper .reviews .review:nth-child(3) {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #002233;
+  color: white;
+}
+
+.sep {
+  margin: 15rem 0;
+  width: 70%;
+  height: 1px;
+  background-color: white;
+  position: relative;
+}
+.sep::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #8FD476;
+  border-radius: 100%;
+  left: calc(50% - 10px);
+  bottom: calc(50% - 10px);
+}
+
+@media only screen and (max-width: 1150px) {
+  body #tartalom .reviewsWrapper .reviews {
+    flex-wrap: wrap;
+  }
+  body #tartalom .reviewsWrapper .reviews .review {
+    margin: 4rem 2rem;
+  }
+}
+@media only screen and (max-width: 970px) {
+  body #tartalom .specialty {
+    flex-direction: column;
+  }
+  body #tartalom .specialty .text {
+    margin-bottom: 10rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  body header nav {
+    justify-content: center;
+  }
+  body header .hero h5 {
+    width: 50%;
+    margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 470px) {
+  body header nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  body header nav a {
+    margin: 1rem 2rem;
+  }
+  body header .hero h5 {
+    width: 70%;
+  }
+  body header .hero h1 {
+    font-size: 4em;
+  }
+}
+@media only screen and (max-width: 470px) {
+  body #tartalom .specialty .text h1 {
+    font-size: 3em;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,13 +1,15 @@
 @import "../uniform/uniform";
 
-@include basics();
 
 body {
 
   header {
 
     @include header();
+
+
   }
+
 
   #tartalom {
     @include centerDiv(column);
@@ -89,7 +91,7 @@ body {
             height: 10rem;
             color: $bg;
             font-weight: bold;
-            text-align: center;
+            text-align: left;
             @include centerDiv(column);
             padding: 1rem;
             border-radius: 0 0 10px 10px;
@@ -112,3 +114,5 @@ body {
     }
   }
 }
+
+@include basics();
