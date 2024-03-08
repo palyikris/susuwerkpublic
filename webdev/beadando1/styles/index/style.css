@@ -75,10 +75,10 @@ body header nav a::after {
 }
 body header nav a:nth-child(1) {
   color: #8FD476;
-  opacity: 0.8;
 }
 body header nav a:nth-child(1)::after {
   background-color: #8FD476;
+  width: 100%;
 }
 body header nav a:hover {
   transform: scale(1.05);
