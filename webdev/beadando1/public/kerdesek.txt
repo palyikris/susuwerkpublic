@@ -1,2 +1,36 @@
 A menüsor felül, vagy bal oldalon helyezkedik el, megfelelően
 elkülönül a tartalomtól (pl. színezett hátterű)
+
+Nincs olyan szöveg aláhúzva, ami nem tölt be link szerepet
+
+A szövegblokkok, listák balra (esetleg sorkizártan) vannak igazítva
+
+A <video> taggel beillesztett videóállományból ki van vágva
+jellemző képkocka és poszterként be van állítva, hogy segítse a
+felhasználót annak eldöntésében, hogy érdemes-e megtekintenie
+a filmet.
+
+Nem a szín az egyetlen vizuális módja az információ
+közvetítésének, a tevékenység jelzésének, a válaszadásra
+ösztönzésnek, vagy a vizuális alkotóelemek
+megkülönböztetésének. (WCAG 2.0 1.4.1-es feltétel)
+A formázás során nem használhatók olyan kiemelések (például a
+fontos kulcsszavak kiemelése), amelyek csak színben térnek el a
+nem kiemelt változattól. Kivétel lehet a navigációs menü.
+
+A videónál szerepel annak teljes szövegű leírása.
+A leírásnak minden lényeges történést tartalmaznia kell, ami a
+videóban látható vagy hallható, nem elegendő néhány szóban
+csak összefoglalni a videó tartalmát. Célszerű külön HTML-
+állományban elhelyezni, és a videó után belinkelni. A pont csak
+akkor adható meg, ha a videó legalább 30 másodperc hosszú,
+legalább 15 másodpercig beszélnek a résztvevők vagy a narrátor,
+nem csak statikus a háttere, vagyis vannak benne vizuális
+történések)
+
+Van(nak) saját készítésű CSS állomány(ok), amelyek legalább 15
+szabályt tartalmaznak. A CSS állományok valid(ak) a
+jigsaw.w3.org/css-validator/ oldal szerint.
+Amennyiben a Bootstrap keretrendszer lett használva, a saját
+készítésű stílusok megfelelően elkülönülnek a Bootstrap
+stílusállományaitól.
