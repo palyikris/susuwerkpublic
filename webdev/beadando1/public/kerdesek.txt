@@ -1,6 +1,7 @@
 A menüsor felül, vagy bal oldalon helyezkedik el, megfelelően
 elkülönül a tartalomtól (pl. színezett hátterű)
 
+<<<<<<< HEAD
 Nincs olyan szöveg aláhúzva, ami nem tölt be link szerepet
 
 A szövegblokkok, listák balra (esetleg sorkizártan) vannak igazítva
@@ -34,3 +35,14 @@ jigsaw.w3.org/css-validator/ oldal szerint.
 Amennyiben a Bootstrap keretrendszer lett használva, a saját
 készítésű stílusok megfelelően elkülönülnek a Bootstrap
 stílusállományaitól.
+=======
+A betűtípus megadásoknál konkrét betűtípusok és általános betűcsaládok is meg vannak adva, a kisebb méretű
+
+Kinézetünkben különböznek a még nem látogatott és látogatott linkek. A már látogatott link kontrasztaránya kisebb a nem látogatotthoz képest. A menü esetén ez nem feltétel. (ez igaz ha nincsenek linkek right)
+A linkek alá vannak húzva a szövegben, kivétel lehet a navigációs menü és linklista. (same)
+A linkek szövegei önmagukban jól érthetőek (a "kattints ide" szöveg nem megfelelő), tömörek (same)
+
+Nincs olyan szöveg aláhúzva, ami nem tölt be link szerepet
+
+A szövegblokkok, listák balra (esetleg sorkizártan) vannak igazítva
+>>>>>>> 72fef0eef3ae7243acbe941504e72b7398411563

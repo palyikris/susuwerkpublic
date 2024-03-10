@@ -21,19 +21,19 @@ body {
       a {
         &:nth-child(4) {
           color: $main;
-          opacity: .8;
 
           &::after {
             background-color: $main;
+            width: 100%;
           }
         }
 
         &:nth-child(1) {
           color: white;
-          opacity: 1;
 
           &::after {
             background-color: white;
+            width: 0;
           }
         }
       }

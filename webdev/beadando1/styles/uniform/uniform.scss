@@ -173,10 +173,10 @@ $accent: #007A78;
 
     &:nth-child(1) {
       color: $main;
-      opacity: .8;
 
       &::after {
         background-color: $main;
+        width: 100%;
       }
     }
 

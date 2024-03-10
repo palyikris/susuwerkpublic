@@ -8,19 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\palyi\\.nuget\\packages\\": {}
+    "C:\\Users\\palyi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\3.kisbea\\Base\\HF3.csproj",
+      "projectUniqueName": "C:\\Users\\palyi\\OneDrive\\Desktop\\bullshitBundle\\susuwerkpublic\\oep\\3.kisbea\\Base\\HF3.csproj",
       "projectName": "HF3",
-      "projectPath": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\3.kisbea\\Base\\HF3.csproj",
+      "projectPath": "C:\\Users\\palyi\\OneDrive\\Desktop\\bullshitBundle\\susuwerkpublic\\oep\\3.kisbea\\Base\\HF3.csproj",
       "packagesPath": "C:\\Users\\palyi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\3.kisbea\\Base\\obj\\",
+      "outputPath": "C:\\Users\\palyi\\OneDrive\\Desktop\\bullshitBundle\\susuwerkpublic\\oep\\3.kisbea\\Base\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\palyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
