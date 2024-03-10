@@ -71,4 +71,20 @@
     </article>
   </main>
 </body>
+<script>
+  let reviews = document.querySelectorAll(".review")
+
+  reviews.forEach(element => {
+    element.addEventListener("click", () => {
+      if(element.classList.contains("active")) {
+        element.classList.remove("active")
+      } else {
+        reviews.forEach(element => {
+          element.classList.remove("active")
+        })
+        element.classList.add("active")
+      }
+    })
+  });
+</script>
 </html>

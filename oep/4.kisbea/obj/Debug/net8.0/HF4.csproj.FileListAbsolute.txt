@@ -1,0 +1,15 @@
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\bin\Debug\net8.0\HF4.exe
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\bin\Debug\net8.0\HF4.deps.json
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\bin\Debug\net8.0\HF4.runtimeconfig.json
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\bin\Debug\net8.0\HF4.dll
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\bin\Debug\net8.0\HF4.pdb
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\obj\Debug\net8.0\HF4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\obj\Debug\net8.0\HF4.AssemblyInfoInputs.cache
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\obj\Debug\net8.0\HF4.AssemblyInfo.cs
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\obj\Debug\net8.0\HF4.csproj.CoreCompileInputs.cache
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\obj\Debug\net8.0\HF4.sourcelink.json
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\obj\Debug\net8.0\HF4.dll
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\obj\Debug\net8.0\refint\HF4.dll
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\obj\Debug\net8.0\HF4.pdb
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\obj\Debug\net8.0\HF4.genruntimeconfig.cache
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\4.kisbea\obj\Debug\net8.0\ref\HF4.dll

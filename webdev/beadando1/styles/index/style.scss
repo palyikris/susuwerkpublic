@@ -77,14 +77,17 @@ body {
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-top: 10rem;
+        position: relative;
 
-        .review {
+        .review,
+        .active {
           @include centerDiv(column);
           justify-content: flex-end;
           width: 20rem;
           height: 25rem;
           border-radius: 10px;
           box-shadow: 0 0 10px 5px rgba($main, 0.5);
+          transition: all 0.5s ease-in-out;
 
           p {
             background-color: white;
@@ -109,6 +112,11 @@ body {
           &:nth-child(3) {
             @include centerImg("../../public/card3.webp");
           }
+        }
+
+        .active {
+          transform: scale(1.2);
+          box-shadow: 0 0 10px 10px rgba($main, 0.5);
         }
       }
     }

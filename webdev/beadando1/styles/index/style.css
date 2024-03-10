@@ -172,8 +172,10 @@ body #tartalom .reviewsWrapper .reviews {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 10rem;
+  position: relative;
 }
-body #tartalom .reviewsWrapper .reviews .review {
+body #tartalom .reviewsWrapper .reviews .review,
+body #tartalom .reviewsWrapper .reviews .active {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,8 +186,10 @@ body #tartalom .reviewsWrapper .reviews .review {
   height: 25rem;
   border-radius: 10px;
   box-shadow: 0 0 10px 5px rgba(143, 212, 118, 0.5);
+  transition: all 0.5s ease-in-out;
 }
-body #tartalom .reviewsWrapper .reviews .review p {
+body #tartalom .reviewsWrapper .reviews .review p,
+body #tartalom .reviewsWrapper .reviews .active p {
   background-color: white;
   height: 10rem;
   color: #002233;
@@ -200,23 +204,30 @@ body #tartalom .reviewsWrapper .reviews .review p {
   border-radius: 0 0 10px 10px;
   font-style: italic;
 }
-body #tartalom .reviewsWrapper .reviews .review:nth-child(1) {
+body #tartalom .reviewsWrapper .reviews .review:nth-child(1),
+body #tartalom .reviewsWrapper .reviews .active:nth-child(1) {
   background-image: url("../../public/card1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-body #tartalom .reviewsWrapper .reviews .review:nth-child(2) {
+body #tartalom .reviewsWrapper .reviews .review:nth-child(2),
+body #tartalom .reviewsWrapper .reviews .active:nth-child(2) {
   background-image: url("../../public/card2.jfif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-body #tartalom .reviewsWrapper .reviews .review:nth-child(3) {
+body #tartalom .reviewsWrapper .reviews .review:nth-child(3),
+body #tartalom .reviewsWrapper .reviews .active:nth-child(3) {
   background-image: url("../../public/card3.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+body #tartalom .reviewsWrapper .reviews .active {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px 10px rgba(143, 212, 118, 0.5);
 }
 
 * {

@@ -1,0 +1,15 @@
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\bin\Debug\net8.0\HF3.exe
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\bin\Debug\net8.0\HF3.deps.json
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\bin\Debug\net8.0\HF3.runtimeconfig.json
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\bin\Debug\net8.0\HF3.dll
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\bin\Debug\net8.0\HF3.pdb
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\obj\Debug\net8.0\HF3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\obj\Debug\net8.0\HF3.AssemblyInfoInputs.cache
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\obj\Debug\net8.0\HF3.AssemblyInfo.cs
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\obj\Debug\net8.0\HF3.csproj.CoreCompileInputs.cache
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\obj\Debug\net8.0\HF3.sourcelink.json
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\obj\Debug\net8.0\HF3.dll
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\obj\Debug\net8.0\refint\HF3.dll
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\obj\Debug\net8.0\HF3.pdb
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\obj\Debug\net8.0\HF3.genruntimeconfig.cache
+C:\Users\palyi\OneDrive\Desktop\bullshitBundle\susuwerkpublic\oep\3.kisbea\Base\obj\Debug\net8.0\ref\HF3.dll

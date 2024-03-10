@@ -65,13 +65,39 @@ body {
       .img {
         @include centerDiv(column);
         width: 40%;
+        position: relative;
 
-        img {
-          height: 20rem;
+        a {
+          @include centerDiv(column);
+
+          img {
+            height: 20rem;
+            width: 90%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 2px rgba($main, 0.5);
+            border: 1px solid white;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover {
+            img {
+              transform: scale(1.01);
+              box-shadow: 0 0 12px 5px rgba($main, 0.5);
+            }
+          }
+        }
+
+        figcaption {
+          position: absolute;
+          bottom: 0;
+          left: 5%;
           width: 90%;
-          border-radius: 10px;
-          box-shadow: 0 0 10px 2px rgba($main, 0.5);
-          border: 1px solid white;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: white;
+          padding: 1rem 0;
+          text-align: center;
+          border-radius: 0 0 10px 10px;
+          font-style: italic;
         }
       }
     }
