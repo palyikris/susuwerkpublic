@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace HF4
 {
@@ -14,27 +10,27 @@ namespace HF4
     }
     internal class PrQueue
     {
-        private List<Element> elements = new List<Element>();
+        private List<Element> seq = new List<Element>();
 
 
         public void SetEmpty()
         {
-            elements.Clear();
+            seq.Clear();
         }
 
         public bool isEmpty()
         {
-            return elements.Count == 0;
+            return seq.Count == 0;
         }
 
         public void Add(Element e)
         {
-            elements.Add(e);
+            seq.Add(e);
         }
 
         private (int, int) MaxSelect()
         {
-            if (elements.Count == 0)
+            if (seq.Count == 0)
             {
                 throw new Exception("Hiba!");
             }
@@ -42,12 +38,12 @@ namespace HF4
             int maxind = 0;
             int maxert = 0;
 
-            for (int i = 0; i < elements.Count; i++)
+            for (int i = 0; i < seq.Count; i++)
             {
-                if (elements[i].pr > maxert)
+                if (seq[i].pr > maxert)
                 {
                     maxind = i;
-                    maxert = elements[i].pr;
+                    maxert = seq[i].pr;
                 }
             }
 
@@ -56,41 +52,39 @@ namespace HF4
 
         public Element GetMax()
         {
-            if(elements.Count == 0)
+            if(seq.Count == 0)
             {
                 throw new Exception("Error!");
             }
 
-            (int _, int maxind) = MaxSelect();
+            (int maxert, int maxind) = MaxSelect();
 
-            return elements[maxind];
+            return seq[maxind];
             
         }
 
         private void pop_back()
         {
-            if (elements.Count == 0)
+            if (seq.Count == 0)
             {
                 throw new Exception("Hiba!");
             }
 
-            (int _, int maxind) = MaxSelect();
+            Element max = GetMax();
 
-            elements.RemoveAt(maxind);
+            seq.Remove(max);
         }
         public Element RemMax()
         {
-            if (elements.Count == 0)
+            if (seq.Count == 0)
             {
                 throw new Exception("Error!");
             }
 
-            (int _, int maxind) = MaxSelect();
+            (int maxert, int maxind) = MaxSelect();
             
 
-            Element e = elements[maxind];
-
-            elements[maxind] = elements[elements.Count];
+            Element e = seq[maxind];
 
             pop_back();
 

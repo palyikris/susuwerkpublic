@@ -121,6 +121,157 @@ body {
       }
     }
   }
+
+  footer {
+    @include centerDiv(row);
+    border-top: 5px dotted $main;
+    padding: 5rem 1rem;
+
+    aside {
+      @include centerDiv(column);
+
+      h5 {
+        font-size: 2em;
+        padding-bottom: 5rem;
+        text-align: center;
+        width: 80%;
+      }
+
+      ul {
+        li {
+          margin: 2rem 0;
+
+          a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            padding: .5rem;
+            position: relative;
+            transition: all 0.4s ease-out;
+
+
+            &::after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              transition: all 0.4s ease-out;
+              position: absolute;
+              z-index: -1;
+              top: 0;
+              left: 0;
+              background-color: $main;
+              border-radius: 10px;
+              width: 0;
+            }
+
+            a:active {
+              color: $bg;
+              transform: scale(1.05);
+            }
+
+            &:visited {
+
+              color: $accent;
+
+              span {
+                color: $accent;
+              }
+
+              &:hover {
+                color: $bg;
+              }
+            }
+
+            span {
+              color: $main;
+            }
+
+            &:hover {
+
+              &::after {
+                width: 100%;
+              }
+
+              span {
+                color: $bg;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    section {
+      @include centerDiv(row);
+      height: 100%;
+
+
+
+      div {
+        @include centerDiv(row);
+        height: 15rem;
+        width: 15rem;
+        position: relative;
+        text-align: center;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: $accent;
+          z-index: -3;
+          transition: all 0.3s ease-out;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 110%;
+          height: 110%;
+          left: -5%;
+          top: -5%;
+          background-color: $bg;
+          transform: rotateZ(45deg);
+          z-index: -3;
+          transition: all 0.3s ease-out;
+        }
+
+        .square {
+          content: "";
+          position: absolute;
+          width: 98%;
+          height: 98%;
+          left: 1%;
+          top: 1%;
+          background-color: $bg;
+          z-index: -1;
+          transition: all 0.3s ease-out;
+        }
+
+        &:hover {
+
+          .square,
+          &::before {
+            transform: scale(0.75) rotateZ(90deg);
+          }
+
+          &::before {
+            background-color: $main;
+          }
+
+
+
+
+          &::after {
+            transform: scale(0.7) rotateZ(135deg);
+          }
+        }
+      }
+    }
+  }
 }
 
 @include basics();

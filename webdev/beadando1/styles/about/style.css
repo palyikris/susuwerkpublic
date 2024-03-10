@@ -182,6 +182,8 @@ body #tartalom .stage .img figcaption {
   text-align: center;
   border-radius: 0 0 10px 10px;
   font-style: italic;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 body #tartalom #stage-2 {
   flex-direction: row-reverse;

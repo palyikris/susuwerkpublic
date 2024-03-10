@@ -6,11 +6,6 @@ Nincs olyan szöveg aláhúzva, ami nem tölt be link szerepet
 
 A szövegblokkok, listák balra (esetleg sorkizártan) vannak igazítva
 
-A <video> taggel beillesztett videóállományból ki van vágva
-jellemző képkocka és poszterként be van állítva, hogy segítse a
-felhasználót annak eldöntésében, hogy érdemes-e megtekintenie
-a filmet.
-
 Nem a szín az egyetlen vizuális módja az információ
 közvetítésének, a tevékenység jelzésének, a válaszadásra
 ösztönzésnek, vagy a vizuális alkotóelemek
@@ -45,4 +40,3 @@ A linkek szövegei önmagukban jól érthetőek (a "kattints ide" szöveg nem me
 Nincs olyan szöveg aláhúzva, ami nem tölt be link szerepet
 
 A szövegblokkok, listák balra (esetleg sorkizártan) vannak igazítva
->>>>>>> 72fef0eef3ae7243acbe941504e72b7398411563
