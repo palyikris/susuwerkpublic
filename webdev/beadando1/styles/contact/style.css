@@ -89,6 +89,12 @@ body header nav a:hover {
 body header nav a:hover::after {
   width: 100%;
 }
+body header nav a:active {
+  color: #8FD476;
+}
+body header nav a:active::after {
+  background-color: #8FD476;
+}
 body header::before {
   border: none;
 }
@@ -111,6 +117,15 @@ body header nav a:nth-child(1) {
 body header nav a:nth-child(1)::after {
   background-color: white;
   width: 0;
+}
+body header nav a:nth-child(1):hover::after {
+  width: 100%;
+}
+body header nav a:nth-child(1):active {
+  color: #8FD476;
+}
+body header nav a:nth-child(1):active::after {
+  background-color: #8FD476;
 }
 body #tartalom {
   display: flex;

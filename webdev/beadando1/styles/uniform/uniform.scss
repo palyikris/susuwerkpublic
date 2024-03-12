@@ -4,7 +4,7 @@
 $main: #8FD476;
 $bg: #002233;
 
-$accent: #007A78;
+$accent: #4FBB85;
 
 @mixin basics() {
   * {
@@ -185,6 +185,14 @@ $accent: #007A78;
 
       &::after {
         width: 100%;
+      }
+    }
+
+    &:active {
+      color: $main;
+
+      &::after {
+        background-color: $main;
       }
     }
 

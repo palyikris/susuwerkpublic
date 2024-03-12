@@ -86,6 +86,12 @@ body header nav a:hover {
 body header nav a:hover::after {
   width: 100%;
 }
+body header nav a:active {
+  color: #8FD476;
+}
+body header nav a:active::after {
+  background-color: #8FD476;
+}
 body #tartalom {
   display: flex;
   justify-content: center;
@@ -187,6 +193,7 @@ body #tartalom .reviewsWrapper .reviews .active {
   border-radius: 10px;
   box-shadow: 0 0 10px 5px rgba(143, 212, 118, 0.5);
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 body #tartalom .reviewsWrapper .reviews .review p,
 body #tartalom .reviewsWrapper .reviews .active p {
@@ -251,16 +258,22 @@ body footer aside h5 {
   text-align: center;
   width: 80%;
 }
+body footer aside h5 span {
+  color: #8FD476;
+}
 body footer aside ul li {
   margin: 2rem 0;
+  width: 100%;
 }
 body footer aside ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.5em;
-  padding: 0.5rem;
+  width: 100%;
+  padding: 0.8rem;
   position: relative;
   transition: all 0.4s ease-out;
+  display: block;
 }
 body footer aside ul li a::after {
   content: "";
@@ -275,15 +288,16 @@ body footer aside ul li a::after {
   border-radius: 10px;
   width: 0;
 }
-body footer aside ul li a a:active {
+body footer aside ul li a:active {
   color: #002233;
   transform: scale(1.05);
 }
 body footer aside ul li a:visited {
-  color: #007A78;
+  position: relative;
+  color: #4FBB85;
 }
 body footer aside ul li a:visited span {
-  color: #007A78;
+  color: #4FBB85;
 }
 body footer aside ul li a:visited:hover {
   color: #002233;
@@ -296,6 +310,15 @@ body footer aside ul li a:hover::after {
 }
 body footer aside ul li a:hover span {
   color: #002233;
+}
+body footer aside ul li:nth-child(2) a::after {
+  right: 0;
+  left: auto;
+  width: 0;
+  background-color: #8FD476;
+}
+body footer aside ul li:nth-child(2) a:hover::after {
+  width: 100%;
 }
 body footer section {
   display: flex;
@@ -323,7 +346,7 @@ body footer section div::before {
   height: 100%;
   left: 0;
   top: 0;
-  background-color: #007A78;
+  background-color: #4FBB85;
   z-index: -3;
   transition: all 0.3s ease-out;
 }
@@ -350,6 +373,26 @@ body footer section div .square {
   z-index: -1;
   transition: all 0.3s ease-out;
 }
+body footer section div h1 {
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+body footer section div h1 span {
+  transition: all 0.3s ease-out;
+  position: relative;
+}
+body footer section div h1 span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  border-bottom: 3px dotted #8FD476;
+  transition: all 0.3s ease-out;
+  width: 0;
+}
 body footer section div:hover .square, body footer section div:hover::before {
   transform: scale(0.75) rotateZ(90deg);
 }
@@ -358,6 +401,12 @@ body footer section div:hover::before {
 }
 body footer section div:hover::after {
   transform: scale(0.7) rotateZ(135deg);
+}
+body footer section div:hover h1 {
+  color: #8FD476;
+}
+body footer section div:hover h1 span::after {
+  width: 100%;
 }
 
 * {
@@ -435,5 +484,13 @@ body {
 @media only screen and (max-width: 470px) {
   body #tartalom .specialty .text h1 {
     font-size: 3em;
+  }
+}
+@media only screen and (max-width: 880px) {
+  body footer {
+    flex-direction: column;
+  }
+  body footer section {
+    margin-top: 10rem;
   }
 }/*# sourceMappingURL=style.css.map */

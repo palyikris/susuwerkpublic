@@ -72,7 +72,7 @@
   </main> 
   <footer>
     <aside>
-      <h5>Linkek zellertermesztéssel kapcsolatban:</h5>
+      <h5>Linkek <span>zeller</span>termesztéssel kapcsolatban:</h5>
         <ul>
           <li>
             <a href="https://www.almanac.com/plant/celery" target="_blank"><span>Instrukciók</span> a termesztéshez</a>
@@ -89,21 +89,21 @@
       </div>
     </section>
   </footer>
-</body>
-<script>
-  let reviews = document.querySelectorAll(".review")
+  <script>
+    let reviews = document.querySelectorAll(".review")
 
-  reviews.forEach(element => {
-    element.addEventListener("click", () => {
-      if(element.classList.contains("active")) {
-        element.classList.remove("active")
-      } else {
-        reviews.forEach(element => {
+    reviews.forEach(element => {
+      element.addEventListener("click", () => {
+        if (element.classList.contains("active")) {
           element.classList.remove("active")
-        })
-        element.classList.add("active")
-      }
-    })
-  });
-</script>
+        } else {
+          reviews.forEach(element => {
+            element.classList.remove("active")
+          })
+          element.classList.add("active")
+        }
+      })
+    });
+  </script>
+</body>
 </html>

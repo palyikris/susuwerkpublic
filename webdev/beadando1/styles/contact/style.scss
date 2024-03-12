@@ -35,6 +35,20 @@ body {
             background-color: white;
             width: 0;
           }
+
+          &:hover {
+            &::after {
+              width: 100%;
+            }
+          }
+
+          &:active {
+            color: $main;
+
+            &::after {
+              background-color: $main;
+            }
+          }
         }
       }
     }
