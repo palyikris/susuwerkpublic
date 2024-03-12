@@ -10,6 +10,10 @@ body {
 
   }
 
+  .headerActive {
+    @include activeHeader();
+  }
+
 
   #tartalom {
     @include centerDiv(column);

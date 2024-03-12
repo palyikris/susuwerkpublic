@@ -104,6 +104,31 @@
         }
       })
     });
+
+    let seps = document.querySelectorAll(".sep")
+
+    seps.forEach(sep => {
+      sep.addEventListener("click", () => {
+        if (sep.classList.contains("sepActive")) {
+          sep.classList.remove("sepActive")
+        } else {
+          seps.forEach(sep => {
+            sep.classList.remove("sepActive")
+          })
+          sep.classList.add("sepActive")
+        }
+      })
+    });
+
+    let header = document.querySelector("header")
+
+    header.addEventListener("click", () => {
+      if (header.classList.contains("headerActive")) {
+        header.classList.remove("headerActive")
+      } else {
+        header.classList.add("headerActive")
+      }
+    })  
   </script>
 </body>
         
