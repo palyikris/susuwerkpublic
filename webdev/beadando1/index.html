@@ -96,6 +96,7 @@
       element.addEventListener("click", () => {
         if (element.classList.contains("active")) {
           element.classList.remove("active")
+<<<<<<< HEAD
         } else {
           reviews.forEach(element => {
             element.classList.remove("active")
@@ -106,4 +107,28 @@
     });
   </script>
 </body>
+=======
+        })
+        element.classList.add("active")
+      }
+    })
+  });
+  
+
+  let circles = document.querySelectorAll(".sep")
+
+  circles.forEach(element => {
+    element.addEventListener("click", () => {
+      if(element.classList.contains("sepActive")) {
+        element.classList.remove("sepActive")
+      } else {
+        circles.forEach(element => {
+          element.classList.remove("sepActive")
+        })
+        element.classList.add("sepActive")
+      }
+    })
+  });
+</script>
+>>>>>>> 8ffee949c5f832caf9abb02dd5fd5e11fa25e150
 </html>
