@@ -105,5 +105,21 @@
       }
     })
   });
+  
+
+  let circles = document.querySelectorAll(".sep")
+
+  circles.forEach(element => {
+    element.addEventListener("click", () => {
+      if(element.classList.contains("sepActive")) {
+        element.classList.remove("sepActive")
+      } else {
+        circles.forEach(element => {
+          element.classList.remove("sepActive")
+        })
+        element.classList.add("sepActive")
+      }
+    })
+  });
 </script>
 </html>
