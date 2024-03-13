@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
 @media only screen and (max-width: 1150px) {
   body #tartalom .reviewsWrapper .reviews {
     flex-wrap: wrap;
@@ -43,4 +42,4 @@
   body #tartalom .specialty .text h1 {
     font-size: 3em;
   }
-}/*# sourceMappingURL=uniform.css.map */
+}/*# sourceMappingURL=style.css.map */

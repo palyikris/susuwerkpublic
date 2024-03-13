@@ -1,0 +1,83 @@
+@import "../uniform";
+
+@mixin topnav() {
+  @include centerDiv(row);
+  justify-content: flex-start;
+  padding: 1.5rem 1rem;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+
+  a {
+    margin: 0 2rem;
+    color: white;
+    text-decoration: none;
+    transition: all .3s;
+    position: relative;
+    width: max-content;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 140%;
+      height: 0;
+      background-color: $main;
+      margin-bottom: -5px;
+      bottom: 0;
+      left: -20%;
+      transition: all .5s;
+      border-radius: 5px 5px 0 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 140%;
+      height: 2px;
+      background-color: white;
+      bottom: 0;
+      left: -20%;
+      margin-bottom: -5px;
+      width: 0;
+      transition: all .5s;
+    }
+
+    &:nth-child(1) {
+      color: $main;
+
+      &::before {
+        background-color: transparent;
+        width: 140%;
+      }
+
+      &::after {
+        background-color: $main;
+        width: 140%;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      font-weight: normal;
+
+      &::before {
+        height: calc(100% + 10px);
+        z-index: -1;
+      }
+
+      &::after {
+        width: 140%;
+      }
+    }
+
+    &:active {
+      color: $main;
+
+      &::after {
+        background-color: $main;
+      }
+    }
+
+  }
+}

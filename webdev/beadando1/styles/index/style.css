@@ -68,6 +68,8 @@ body header nav a {
   text-decoration: none;
   transition: all 0.3s;
   position: relative;
+  width: -moz-max-content;
+  width: max-content;
 }
 body header nav a::before {
   position: absolute;
