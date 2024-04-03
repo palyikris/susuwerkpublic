@@ -1,0 +1,1 @@
+1 2 -4 56 kutya string 49 96 10 10 10 macska
