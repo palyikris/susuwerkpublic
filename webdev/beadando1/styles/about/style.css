@@ -1,4 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+.sep,
+.sepActive {
+  margin: 15rem 0;
+  width: 70%;
+  height: 1px;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+}
+.sep::after,
+.sepActive::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #8FD476;
+  border-radius: 100%;
+  left: calc(50% - 10px);
+  bottom: calc(50% - 10px);
+  transition: all 0.2s ease-out;
+}
+
+.sepActive::after {
+  animation-name: doOneLine;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  background-color: white;
+}
+.sepActive::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #8FD476;
+  border-radius: 100%;
+  left: calc(50% - 10px);
+  bottom: calc(50% - 10px);
+  transition: all 0.2s ease-out;
+  animation-name: flipCircle;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes doOneLine {
+  0% {
+    left: calc(50% - 10px);
+  }
+  25% {
+    left: calc(100% - 20px);
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: calc(50% - 10px);
+  }
+}
+@keyframes flipCircle {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
 body header {
   display: flex;
   justify-content: center;
@@ -69,6 +140,8 @@ body header nav a {
   text-decoration: none;
   transition: all 0.3s;
   position: relative;
+  width: -moz-max-content;
+  width: max-content;
 }
 body header nav a::before {
   position: absolute;
@@ -222,6 +295,10 @@ body #tartalom .stage .text p {
   width: 70%;
   margin: 0.5rem 0;
 }
+body #tartalom .stage .text p span {
+  color: #8FD476;
+  font-weight: bold;
+}
 body #tartalom .stage .img {
   display: flex;
   justify-content: center;
@@ -275,6 +352,7 @@ body #tartalom #stage-2 {
   font-family: "Madimi One", sans-serif;
   font-weight: 400;
   font-style: normal;
+  outline: none;
 }
 
 body {
@@ -283,120 +361,6 @@ body {
   overflow-x: hidden;
 }
 
-.sep,
-.sepActive {
-  margin: 15rem 0;
-  width: 70%;
-  height: 1px;
-  background-color: white;
-  position: relative;
-  cursor: pointer;
-}
-.sep::after,
-.sepActive::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #8FD476;
-  border-radius: 100%;
-  left: calc(50% - 10px);
-  bottom: calc(50% - 10px);
-  transition: all 0.2s ease-out;
-}
-
-.sepActive::after {
-  animation-name: doOneLine;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  background-color: white;
-}
-.sepActive::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #8FD476;
-  border-radius: 100%;
-  left: calc(50% - 10px);
-  bottom: calc(50% - 10px);
-  transition: all 0.2s ease-out;
-  animation-name: flipCircle;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-
-@keyframes doOneLine {
-  0% {
-    left: calc(50% - 10px);
-  }
-  25% {
-    left: calc(100% - 20px);
-  }
-  50% {
-    left: 0;
-  }
-  100% {
-    left: calc(50% - 10px);
-  }
-}
-@keyframes flipCircle {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-@media only screen and (max-width: 1150px) {
-  body #tartalom .reviewsWrapper .reviews {
-    flex-wrap: wrap;
-  }
-  body #tartalom .reviewsWrapper .reviews .review {
-    margin: 4rem 2rem;
-  }
-}
-@media only screen and (max-width: 970px) {
-  body #tartalom .specialty {
-    flex-direction: column;
-  }
-  body #tartalom .specialty .text {
-    margin-bottom: 10rem;
-  }
-}
-@media only screen and (max-width: 750px) {
-  body header nav {
-    justify-content: center;
-  }
-  body header .hero h5 {
-    width: 50%;
-    margin-top: 1rem;
-  }
-}
-@media only screen and (max-width: 470px) {
-  body header nav {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  body header nav a {
-    margin: 1rem 2rem;
-  }
-  body header .hero h5 {
-    width: 70%;
-  }
-  body header .hero h1 {
-    font-size: 4em;
-  }
-}
-@media only screen and (max-width: 470px) {
-  body #tartalom .specialty .text h1 {
-    font-size: 3em;
-  }
-}
 @media only screen and (max-width: 555px) {
   body #tartalom {
     padding: 10rem 0;
@@ -419,5 +383,33 @@ body {
   body #tartalom #stage-2 .img img {
     height: 15rem;
     width: 100%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  body header nav {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 470px) {
+  body header nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  body header nav a {
+    margin: 1rem 2rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  body header .hero h5 {
+    width: 50%;
+    margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 470px) {
+  body header .hero h5 {
+    width: 70%;
+  }
+  body header .hero h1 {
+    font-size: 4em;
   }
 }/*# sourceMappingURL=style.css.map */

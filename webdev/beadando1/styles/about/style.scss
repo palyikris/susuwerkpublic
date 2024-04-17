@@ -1,5 +1,6 @@
 @import "../uniform/uniform";
-
+@import "../uniform//header/style";
+@import "../uniform/separator/style";
 
 body {
   header {
@@ -99,6 +100,11 @@ body {
           text-align: justify;
           width: 70%;
           margin: .5rem 0;
+
+          span {
+            color: $main;
+            font-weight: bold;
+          }
         }
       }
 
@@ -175,6 +181,60 @@ body {
             height: 15rem;
             width: 100%;
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    header {
+      nav {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  body {
+    header {
+      nav {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        a {
+          margin: 1rem 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    header {
+      .hero {
+        h5 {
+          width: 50%;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  body {
+    header {
+      .hero {
+        h5 {
+          width: 70%;
+        }
+
+        h1 {
+          font-size: 4em;
         }
       }
     }

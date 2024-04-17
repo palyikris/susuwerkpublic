@@ -32,3 +32,13 @@ A linkek szövegei önmagukban jól érthetőek (a "kattints ide" szöveg nem me
 Nincs olyan szöveg aláhúzva, ami nem tölt be link szerepet 
 
 A szövegblokkok, listák balra (esetleg sorkizártan) vannak igazítva
+
+Letapogathatóság elve, kulcsszavak ki vannak emelve. (ezmi?)
+
+A képek előképei kicsinyítve vannak, thumbnail (ezmi?)
+
+Képeknél alt tag precíz. (mennyire?)
+
+44. feltétel. ezmi
+
+45. feltétel. ezmi

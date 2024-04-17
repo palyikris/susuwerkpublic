@@ -20,9 +20,14 @@
   <main id="tartalom">
     <article class="tableWrapper">
       <table>
-        <tr>
-          <td colspan="3" class="th">Elérhetőségeink</td>
-        </tr>
+        <caption>
+          Elérhetőségeink
+
+          <details id="deets">
+            <summary>Nyitvatartás</summary>
+            <p>Hétfőtől Péntekig 9:00 - 16:00</p>
+          </details>
+        </caption>
         <tr>
           <td>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -65,28 +70,39 @@
   <script>
     let seps = document.querySelectorAll(".sep")
 
-      seps.forEach(sep => {
-        sep.addEventListener("click", () => {
-          if (sep.classList.contains("sepActive")) {
-            sep.classList.remove("sepActive")
-          } else {
-            seps.forEach(sep => {
-              sep.classList.remove("sepActive")
-            })
-            sep.classList.add("sepActive")
-          }
-        })
-      });
-
-      let header = document.querySelector("header")
-
-      header.addEventListener("click", () => {
-        if (header.classList.contains("headerActive")) {
-          header.classList.remove("headerActive")
+    seps.forEach(sep => {
+      sep.addEventListener("click", () => {
+        if (sep.classList.contains("sepActive")) {
+          sep.classList.remove("sepActive")
         } else {
-          header.classList.add("headerActive")
+          seps.forEach(sep => {
+            sep.classList.remove("sepActive")
+          })
+          sep.classList.add("sepActive")
         }
-      })  
+      })
+    });
+
+    let header = document.querySelector("header")
+
+    header.addEventListener("click", () => {
+      if (header.classList.contains("headerActive")) {
+        header.classList.remove("headerActive")
+      } else {
+        header.classList.add("headerActive")
+      }
+    })
+    
+    // let deets = document.getElementById("deets")
+
+    // deets.addEventListener("click", () => {
+    //   if (deets.open) {
+    //     deets.removeAttribute("open");
+    //   } else {
+    //     deets.setAttribute("open", "true");
+    //   }
+    // });
+    
   </script>
 </body>
 </html>

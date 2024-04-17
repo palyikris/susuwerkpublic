@@ -1,3 +1,5 @@
+@import "../topnav/style";
+
 @mixin header() {
   @include centerDiv(row);
   height: 100vh;
