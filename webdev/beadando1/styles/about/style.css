@@ -344,6 +344,102 @@ body #tartalom .stage .img figcaption {
 body #tartalom #stage-2 {
   flex-direction: row-reverse;
 }
+body footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  border-top: dotted 5px #8FD476;
+  padding: 5rem;
+}
+body footer .tm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 15rem;
+  width: 15rem;
+  position: relative;
+  text-align: center;
+}
+body footer .tm::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #4FBB85;
+  z-index: -3;
+  transition: all 0.3s ease-out;
+}
+body footer .tm::after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  left: -5%;
+  top: -5%;
+  background-color: #002233;
+  transform: rotateZ(45deg);
+  z-index: -3;
+  transition: all 0.3s ease-out;
+}
+body footer .tm .square {
+  content: "";
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  left: 1%;
+  top: 1%;
+  background-color: #002233;
+  z-index: -1;
+  transition: all 0.3s ease-out;
+}
+body footer .tm h1 {
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+body footer .tm h1 span {
+  transition: all 0.3s ease-out;
+  position: relative;
+}
+body footer .tm h1 span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  border-bottom: 3px dotted #8FD476;
+  transition: all 0.3s ease-out;
+  width: 0;
+}
+body footer .tm:hover .square, body footer .tm:hover::before {
+  transform: scale(0.75) rotateZ(90deg);
+}
+body footer .tm:hover::before {
+  background-color: #8FD476;
+}
+body footer .tm:hover::after {
+  transform: scale(0.7) rotateZ(135deg);
+}
+body footer .tm:hover h1 {
+  color: #8FD476;
+}
+body footer .tm:hover h1 span::after {
+  width: 100%;
+}
+body footer .back a {
+  -webkit-text-decoration: dotted underline #8FD476;
+          text-decoration: dotted underline #8FD476;
+  color: #8FD476;
+}
 
 * {
   margin: 0;
@@ -361,6 +457,14 @@ body {
   overflow-x: hidden;
 }
 
+@media print {
+  body header nav {
+    display: none;
+  }
+  body #tartalom .specialty .video video {
+    display: none;
+  }
+}
 @media only screen and (max-width: 555px) {
   body #tartalom {
     padding: 10rem 0;
@@ -384,13 +488,19 @@ body {
     height: 15rem;
     width: 100%;
   }
+  body footer {
+    flex-direction: column;
+  }
+  body footer .tm {
+    margin-bottom: 5rem;
+  }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   body header nav {
     justify-content: center;
   }
 }
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 650px) {
   body header nav {
     justify-content: center;
     flex-wrap: wrap;

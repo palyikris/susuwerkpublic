@@ -257,7 +257,7 @@ body #tartalom .specialty .video {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
 }
 body #tartalom .specialty .video video {
@@ -265,6 +265,18 @@ body #tartalom .specialty .video video {
   border-radius: 10px;
   box-shadow: 0 0 10px 2px rgba(143, 212, 118, 0.5);
   border: 1px solid white;
+}
+body #tartalom .specialty .video a {
+  -webkit-text-decoration: solid underline #8FD476;
+          text-decoration: solid underline #8FD476;
+  color: #8FD476;
+  font-size: large;
+  margin-top: 2rem;
+}
+body #tartalom .specialty .video a:visited {
+  color: #4FBB85;
+  -webkit-text-decoration: solid underline #4FBB85;
+          text-decoration: solid underline #4FBB85;
 }
 body #tartalom .sep {
   margin: 10rem 0;
@@ -457,8 +469,9 @@ body footer section {
   flex-direction: row;
   width: 100%;
   height: 100%;
+  flex-direction: column;
 }
-body footer section div {
+body footer section .tm {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -469,7 +482,7 @@ body footer section div {
   position: relative;
   text-align: center;
 }
-body footer section div::before {
+body footer section .tm::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -480,7 +493,7 @@ body footer section div::before {
   z-index: -3;
   transition: all 0.3s ease-out;
 }
-body footer section div::after {
+body footer section .tm::after {
   content: "";
   position: absolute;
   width: 110%;
@@ -492,7 +505,7 @@ body footer section div::after {
   z-index: -3;
   transition: all 0.3s ease-out;
 }
-body footer section div .square {
+body footer section .tm .square {
   content: "";
   position: absolute;
   width: 98%;
@@ -503,15 +516,15 @@ body footer section div .square {
   z-index: -1;
   transition: all 0.3s ease-out;
 }
-body footer section div h1 {
+body footer section .tm h1 {
   text-align: center;
   transition: all 0.3s ease-out;
 }
-body footer section div h1 span {
+body footer section .tm h1 span {
   transition: all 0.3s ease-out;
   position: relative;
 }
-body footer section div h1 span::after {
+body footer section .tm h1 span::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -523,20 +536,28 @@ body footer section div h1 span::after {
   transition: all 0.3s ease-out;
   width: 0;
 }
-body footer section div:hover .square, body footer section div:hover::before {
+body footer section .tm:hover .square, body footer section .tm:hover::before {
   transform: scale(0.75) rotateZ(90deg);
 }
-body footer section div:hover::before {
+body footer section .tm:hover::before {
   background-color: #8FD476;
 }
-body footer section div:hover::after {
+body footer section .tm:hover::after {
   transform: scale(0.7) rotateZ(135deg);
 }
-body footer section div:hover h1 {
+body footer section .tm:hover h1 {
   color: #8FD476;
 }
-body footer section div:hover h1 span::after {
+body footer section .tm:hover h1 span::after {
   width: 100%;
+}
+body footer section .back {
+  margin-top: 5em;
+}
+body footer section .back a {
+  -webkit-text-decoration: dotted underline #8FD476;
+          text-decoration: dotted underline #8FD476;
+  color: #8FD476;
 }
 
 * {
@@ -555,6 +576,14 @@ body {
   overflow-x: hidden;
 }
 
+@media print {
+  body header nav {
+    display: none;
+  }
+  body #tartalom .specialty .video video {
+    display: none;
+  }
+}
 @media only screen and (max-width: 880px) {
   body footer {
     flex-direction: column;
@@ -563,12 +592,12 @@ body {
     margin-top: 10rem;
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   body header nav {
     justify-content: center;
   }
 }
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 650px) {
   body header nav {
     justify-content: center;
     flex-wrap: wrap;
@@ -589,6 +618,9 @@ body {
   }
   body header .hero h1 {
     font-size: 4em;
+  }
+  body #tartalom .specialty .text h1 {
+    font-size: 2.5em;
   }
 }
 @media only screen and (max-width: 1150px) {

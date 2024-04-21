@@ -154,6 +154,116 @@ body {
 
     }
   }
+
+  footer {
+    @include centerDiv(row);
+    height: 100%;
+    justify-content: space-around;
+    border-top: dotted 5px $main;
+    padding: 5rem;
+
+    .tm {
+      @include centerDiv(row);
+      height: 15rem;
+      width: 15rem;
+      position: relative;
+      text-align: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $accent;
+        z-index: -3;
+        transition: all 0.3s ease-out;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 110%;
+        height: 110%;
+        left: -5%;
+        top: -5%;
+        background-color: $bg;
+        transform: rotateZ(45deg);
+        z-index: -3;
+        transition: all 0.3s ease-out;
+      }
+
+      .square {
+        content: "";
+        position: absolute;
+        width: 98%;
+        height: 98%;
+        left: 1%;
+        top: 1%;
+        background-color: $bg;
+        z-index: -1;
+        transition: all 0.3s ease-out;
+      }
+
+      h1 {
+        text-align: center;
+        transition: all 0.3s ease-out;
+
+        span {
+          transition: all 0.3s ease-out;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            border-bottom: 3px dotted $main;
+            transition: all 0.3s ease-out;
+            width: 0;
+          }
+        }
+      }
+
+      &:hover {
+
+        .square,
+        &::before {
+          transform: scale(0.75) rotateZ(90deg);
+        }
+
+        &::before {
+          background-color: $main;
+        }
+
+        &::after {
+          transform: scale(0.7) rotateZ(135deg);
+        }
+
+        h1 {
+          color: $main;
+
+          span {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .back {
+
+      a {
+        text-decoration: dotted underline $main;
+        color: $main;
+      }
+    }
+  }
 }
 
 @include basics();
@@ -184,10 +294,24 @@ body {
         }
       }
     }
+
+    footer {
+      flex-direction: column;
+
+      .tm {
+        margin-bottom: 5rem;
+
+      }
+
+      .back {
+
+        a {}
+      }
+    }
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   body {
     header {
       nav {
@@ -197,7 +321,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 650px) {
   body {
     header {
       nav {

@@ -20,6 +20,26 @@ $accent: #4FBB85;
     color: white;
     overflow-x: hidden;
   }
+
+  @media print {
+    body {
+      header {
+        nav {
+          display: none;
+        }
+      }
+
+      #tartalom {
+        .specialty {
+          .video {
+            video {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @mixin centerDiv($dir) {
