@@ -4,7 +4,6 @@
 
 
 body {
-
   header {
     @include header();
 
@@ -694,6 +693,15 @@ body {
           font-size: 4em;
         }
       }
+    }
+  }
+}
+
+@media print {
+  div {
+    img {
+      width: 10rem !important;
+      height: 10rem !important;
     }
   }
 }

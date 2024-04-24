@@ -458,10 +458,58 @@ body {
 }
 
 @media print {
+  body header {
+    height: auto;
+    background: none;
+  }
+  body header::before {
+    display: none !important;
+  }
   body header nav {
     display: none;
   }
-  body #tartalom .specialty .video video {
+  body video {
+    display: none;
+  }
+  body p,
+  body a,
+  body div,
+  body h1,
+  body h5,
+  body ul,
+  body li,
+  body span {
+    color: black !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    font-weight: normal !important;
+  }
+  body p span,
+  body a span,
+  body div span,
+  body h1 span,
+  body h5 span,
+  body ul span,
+  body li span,
+  body span span {
+    color: black !important;
+  }
+  body div {
+    background-color: white !important;
+    height: auto !important;
+  }
+  body article {
+    flex-direction: column !important;
+    margin: 0 !important;
+  }
+  body .sep {
+    display: none !important;
+  }
+  body img {
+    box-shadow: none !important;
+    width: 80% !important;
+  }
+  body footer {
     display: none;
   }
 }
@@ -521,5 +569,10 @@ body {
   }
   body header .hero h1 {
     font-size: 4em;
+  }
+}
+@media print {
+  .stage {
+    flex-direction: row !important;
   }
 }/*# sourceMappingURL=style.css.map */

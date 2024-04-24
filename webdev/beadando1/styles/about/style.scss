@@ -364,3 +364,9 @@ body {
     }
   }
 }
+
+@media print {
+  .stage {
+    flex-direction: row !important;
+  }
+}

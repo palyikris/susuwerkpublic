@@ -24,19 +24,85 @@ $accent: #4FBB85;
   @media print {
     body {
       header {
+        height: auto;
+
+        &::before {
+          display: none !important;
+        }
+
         nav {
           display: none;
         }
+
+        background: none;
       }
 
-      #tartalom {
-        .specialty {
-          .video {
-            video {
-              display: none;
-            }
-          }
+      video {
+        display: none;
+      }
+
+      p,
+      a,
+      div,
+      h1,
+      h5,
+      ul,
+      li,
+      label,
+      span,
+      button,
+      caption,
+      details,
+      summary,
+      figure,
+      svg {
+        color: black !important;
+        box-shadow: none !important;
+        text-decoration: none !important;
+        font-weight: normal !important;
+
+        span {
+          color: black !important;
         }
+      }
+
+      div {
+        background-color: white !important;
+        height: auto !important;
+        border: none !important;
+      }
+
+      article {
+        flex-direction: column !important;
+        margin: 0 !important;
+        border: none !important;
+      }
+
+      section,
+      form,
+      input,
+      textarea,
+      select,
+      table,
+      caption,
+      td,
+      th,
+      button {
+        border: none !important;
+        color: black !important;
+      }
+
+      .sep {
+        display: none !important;
+      }
+
+      img {
+        box-shadow: none !important;
+        width: 80% !important;
+      }
+
+      footer {
+        display: none;
       }
     }
   }
