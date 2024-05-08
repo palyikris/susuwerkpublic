@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budapesti élmények | Programok</title>
+  <link rel="icon" href="images/cimer.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/print.css" media="print">
+</head>
+<body>
+    <header>
+        <nav class="hidden">
+            <h2>Ugrás az oldalon belül</h2>
+            <a href="#content">Ugrás a tartalomra</a>
+        </nav>
+        <div class="container">
+            <div class="header-content">
+                <div class="row d-md-flex">
+                    <nav class="col-sm-3 col-12 m-auto">
+                        <img src="images/top.png" alt="Menü Parlament">
+                        <ul>
+                            <li><a href="index.html">Kezdőlap</a></li>
+                            <li><a href="latvany.html">Látványosságok</a></li>
+                            <li><a class="current">Programok</a></li>
+                            <li><a href="jelentkezz.html">Jelentkezz</a></li>
+                        </ul>
+                    </nav>
+                    <div class="col-sm-9 col-12 m-auto">
+                        <h1 class="display-1">Programok</h1>
+                    </div>
+                    <button onclick="toggleAccessibility()"><img src="images/contrast.png" alt="Kontraszt gomb"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <div class="table-container">
+            <section>
+                <h2><strong>Budapesti élmények</strong></h2>
+                <p>Találjon <strong>programokat és élményeket</strong> Budapesten, hogy felejthetetlen időt tölthessen el a városban.</p> 
+            </section>
+            <section>
+                <h2><strong>Ajánlott programok Budapesten</strong></h2>
+                <p>Ismerje meg az <strong>ajánlott programjainkat</strong>, és találja meg az ideális kikapcsolódást a városban.</p>
+                <aside>       
+                    <table>
+                        <caption>
+                            <details>
+                                <summary>Súgó</summary>
+                                <p>A táblázatban néhány ajánlott programunk van feltüntetve.</p>
+                            </details>
+                        </caption>     
+                        <tr>
+                        <th>Budapesti élmények</th>
+                        <th>leírás</th>
+                        </tr>
+                        <tr>
+                        <td class="row-title"><a href="https://ligetbudapest.hu/latogatoknak/liget-setak" target="_blank">Szecessziós séták a Városligetben</a></td>
+                        <td class="row-desc">Csodáld meg Budapest gyönyörű szecessziós épületeit egy sétával a <strong>Városligetben</strong>. A séta során megismerheted a századforduló hangulatát és stílusát, miközben felfedezed a város rejtett kincseit.</td>
+                        </tr>
+                        <tr>
+                        <td class="row-title"><a href="https://www.parlament.hu/web/orszaghaz/latogatas" target="_blank"> Parlament-látogatás </a></td>
+                        <td class="row-desc">Fedezd fel Magyarország egyik legjelentősebb épületét, a Budapest szívében található <strong>Parlamentet</strong>. A látogatás során betekintést nyerhetsz az ország történelmébe és politikai életébe.</td>
+                        </tr>
+                        <tr>
+                        <td class="row-title"><a href="https://silver-line.hu/hu/setahajo-budapest-hajos-varosnezes/" target="_blank">Hajókázás a Duna-parton </a></td>
+                        <td class="row-desc">Élvezd Budapest lenyűgöző panorámáját egy romantikus <strong>hajókázással a Duna-parton</strong>. Fedezd fel a várost új szemszögből, miközben élvezitek a folyó nyugalmát és a város fényeit az esti órákban.</td>
+                        </tr>
+                    </table>
+                </aside>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Az oldalon látható képek mesterséges intelligencia által generáltak.<br> © 2024 Budapesti élmények. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+    <script src="script/contrast.js"></script>
+</body>
+</html>

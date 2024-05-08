@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|c:\\users\\palyi\\bullshitbundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|solutionrelative:nagybea\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|c:\\users\\palyi\\bullshitbundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\wildlife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|solutionrelative:nagybea\\wildlife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|c:\\users\\palyi\\bullshitbundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\colony.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|solutionrelative:nagybea\\colony.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|c:\\users\\palyi\\bullshitbundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\lemming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|solutionrelative:nagybea\\lemming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|c:\\users\\palyi\\bullshitbundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\owl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|solutionrelative:nagybea\\owl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|c:\\users\\palyi\\bullshitbundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|solutionrelative:nagybea\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|c:\\users\\palyi\\bullshitbundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\bear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|solutionrelative:nagybea\\bear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|c:\\users\\palyi\\bullshitbundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\moose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|solutionrelative:nagybea\\moose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|c:\\users\\palyi\\bullshitbundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\fox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|solutionrelative:nagybea\\fox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|c:\\users\\palyi\\bullshitbundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\rabbit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|solutionrelative:nagybea\\rabbit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|c:\\users\\palyi\\bullshitbundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\prey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|solutionrelative:nagybea\\prey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|c:\\users\\palyi\\bullshitbundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\carnivore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9046908D-DF6F-4CC8-9E8C-BB41294696A2}|nagybea\\nagybea.csproj|solutionrelative:nagybea\\carnivore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Bear.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Bear.cs",
+              "RelativeDocumentMoniker": "nagybea\\Bear.cs",
+              "ToolTip": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Bear.cs",
+              "RelativeToolTip": "nagybea\\Bear.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAwDQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T19:04:13.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Fox.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Fox.cs",
+              "RelativeDocumentMoniker": "nagybea\\Fox.cs",
+              "ToolTip": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Fox.cs",
+              "RelativeToolTip": "nagybea\\Fox.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T19:01:54.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Owl.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Owl.cs",
+              "RelativeDocumentMoniker": "nagybea\\Owl.cs",
+              "ToolTip": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Owl.cs",
+              "RelativeToolTip": "nagybea\\Owl.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwB4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T18:31:22.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Carnivore.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Carnivore.cs",
+              "RelativeDocumentMoniker": "nagybea\\Carnivore.cs",
+              "ToolTip": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Carnivore.cs",
+              "RelativeToolTip": "nagybea\\Carnivore.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T18:29:48.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Moose.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Moose.cs",
+              "RelativeDocumentMoniker": "nagybea\\Moose.cs",
+              "ToolTip": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Moose.cs",
+              "RelativeToolTip": "nagybea\\Moose.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T18:27:40.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Rabbit.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Rabbit.cs",
+              "RelativeDocumentMoniker": "nagybea\\Rabbit.cs",
+              "ToolTip": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Rabbit.cs",
+              "RelativeToolTip": "nagybea\\Rabbit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T18:23:55.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lemming.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Lemming.cs",
+              "RelativeDocumentMoniker": "nagybea\\Lemming.cs",
+              "ToolTip": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Lemming.cs",
+              "RelativeToolTip": "nagybea\\Lemming.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T18:21:06.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Prey.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Prey.cs",
+              "RelativeDocumentMoniker": "nagybea\\Prey.cs",
+              "ToolTip": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Prey.cs",
+              "RelativeToolTip": "nagybea\\Prey.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T18:20:25.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Animal.cs",
+              "RelativeDocumentMoniker": "nagybea\\Animal.cs",
+              "ToolTip": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Animal.cs",
+              "RelativeToolTip": "nagybea\\Animal.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T18:12:27.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Colony.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Colony.cs",
+              "RelativeDocumentMoniker": "nagybea\\Colony.cs",
+              "ToolTip": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Colony.cs",
+              "RelativeToolTip": "nagybea\\Colony.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T18:01:12.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Wildlife.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Wildlife.cs",
+              "RelativeDocumentMoniker": "nagybea\\Wildlife.cs",
+              "ToolTip": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Wildlife.cs",
+              "RelativeToolTip": "nagybea\\Wildlife.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T17:49:30.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Program.cs",
+              "RelativeDocumentMoniker": "nagybea\\Program.cs",
+              "ToolTip": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\nagybea\\Program.cs",
+              "RelativeToolTip": "nagybea\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T17:40:24.178Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

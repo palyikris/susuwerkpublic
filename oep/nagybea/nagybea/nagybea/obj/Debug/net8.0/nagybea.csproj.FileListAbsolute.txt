@@ -1,0 +1,15 @@
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\bin\Debug\net8.0\nagybea.exe
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\bin\Debug\net8.0\nagybea.deps.json
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\bin\Debug\net8.0\nagybea.runtimeconfig.json
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\bin\Debug\net8.0\nagybea.dll
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\bin\Debug\net8.0\nagybea.pdb
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\obj\Debug\net8.0\nagybea.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\obj\Debug\net8.0\nagybea.AssemblyInfoInputs.cache
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\obj\Debug\net8.0\nagybea.AssemblyInfo.cs
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\obj\Debug\net8.0\nagybea.csproj.CoreCompileInputs.cache
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\obj\Debug\net8.0\nagybea.sourcelink.json
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\obj\Debug\net8.0\nagybea.dll
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\obj\Debug\net8.0\refint\nagybea.dll
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\obj\Debug\net8.0\nagybea.pdb
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\obj\Debug\net8.0\nagybea.genruntimeconfig.cache
+C:\Users\palyi\bullshitBundle\susuwerkpublic\oep\nagybea\nagybea\nagybea\obj\Debug\net8.0\ref\nagybea.dll
