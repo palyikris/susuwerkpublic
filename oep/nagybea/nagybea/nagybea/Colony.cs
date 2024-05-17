@@ -8,7 +8,7 @@ namespace nagybea
 {
     public class Colony
     {
-        private string name;
+        public string name;
         public int population;
         public Animal species;
 
@@ -26,9 +26,13 @@ namespace nagybea
 
         public void Attack(Colony col)
         {
-            (int carcol, int preycol) = species.Attack(this.population, col);
-            this.population = carcol;
-            col.population = preycol;
+            if(this.species is Carnivore)
+            {
+                Carnivore car = this.species as Carnivore;
+                (int carcol, int preycol) = car.Hunt(this, col);
+                this.population = carcol;
+                col.population = preycol;
+            }
         }
     }
 }

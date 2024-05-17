@@ -18,7 +18,7 @@ namespace nagybea
             return 0;
         }
 
-        public virtual (int, int) Attack(int carpop, Colony preycol)
+        public (int, int) Hunt(Colony _, Colony __)
         {
             return (0, 0);
         }

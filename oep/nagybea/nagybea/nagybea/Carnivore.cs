@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace nagybea
 {
-    public class Carnivore : Animal
+    public abstract class Carnivore : Animal
     {
         public Carnivore() { }
+
+        public new abstract (int, int) Hunt(Colony _, Colony __);
     }
 }

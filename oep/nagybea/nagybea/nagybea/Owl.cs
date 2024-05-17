@@ -15,41 +15,10 @@ namespace nagybea
             return pop += pop / 4 * 2;
         }
 
-        public override (int, int) Attack(int carpop, Colony preycol)
+        public override (int, int) Hunt(Colony car, Colony prey)
         {
-            switch (preycol.species)
-            {
-                case Lemming:
-                    double huntedDoubleLem = preycol.population * 0.3;
-                    int huntedLem = (int)huntedDoubleLem;
-                    if(carpop <= huntedLem * 2)
-                    {
-                        return (carpop, preycol.population - huntedLem);
-                    }
-                    else
-                    {
-                        return(huntedLem / 2, preycol.population - huntedLem);
-                    }
-
-                case Rabbit:
-                    double huntedDoubleRab = preycol.population * 0.2;
-                    int huntedRab = (int)huntedDoubleRab;
-                    if (carpop <= huntedRab)
-                    {
-                        return (carpop, preycol.population - huntedRab);
-                    }
-                    else
-                    {
-                        return (huntedRab, preycol.population - huntedRab);
-                    }
-
-                case Moose:
-                    throw new ArgumentException("Moose is too big for Owl!");
-
-                default:
-                    throw new ArgumentException("Only preys are allowed!");
-
-            }
+            Prey prey1 = (Prey)(prey.species);
+            return prey1.GetHunted(this, car, prey);
         }
     }
 }

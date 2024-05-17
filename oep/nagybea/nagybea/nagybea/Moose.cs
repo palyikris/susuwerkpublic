@@ -19,5 +19,18 @@ namespace nagybea
             double newpop = pop * 1.2;
             return (int)newpop;
         }
+
+        public override (int, int) GetHunted(Bear _, Colony car, Colony prey)
+        {
+            int carpop = Math.Min((int)(prey.population * 0.25) * 2, car.population);
+            int preypop = (int)(prey.population * 0.75);
+
+            return (carpop, preypop);
+        }
+
+        public override (int, int) GetHunted(Fox _, Colony car, Colony prey) => (0, prey.population);
+
+
+        public override (int, int) GetHunted(Owl _, Colony car, Colony prey) => (0, prey.population);
     }
 }

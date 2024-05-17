@@ -8,17 +8,13 @@ namespace nagybea
 {
     public class Wildlife
     {
-        private List<Colony> colonies;
-        private int round;
+        public List<Colony> colonies;
+        public int round;
 
-        public Wildlife(List<Colony> colonies) {
+        public Wildlife() {
             
             this.colonies = new List<Colony>();
-            foreach (Colony col in colonies)
-            {
-                this.colonies.Add(col);
-                this.round = 1;
-            }
+            this.round = 0;
         }
 
         public void Turn() 
@@ -29,72 +25,68 @@ namespace nagybea
 
         private void Simulate()
         {
-            foreach(Colony colony in colonies)
+            
+            if(this.round % 2 == 0)
             {
-                switch (colony.species)
+                foreach(Colony colony in this.colonies)
                 {
-                    case Lemming:
-                        if(round % 2 == 0)
-                        {
-                            colony.Reproduction();
-                        }
-                        break;
-                    case Rabbit:
-                        if (round % 2 == 0)
-                        {
-                            colony.Reproduction();
-                        }
-                        break;
-                    case Moose:
-                        if (round % 4 == 0)
-                        {
-                            colony.Reproduction();
-                        }
-                        break;
-                    case Owl:
-                        if (round % 3 == 0)
-                        {
-                            colony.Reproduction();
-                        }
-                        List<Colony> preys = colonies.Where(col => col.species is Lemming or Rabbit).ToList();
-                        Random random = new Random();
-                        int randomIndex = random.Next(0, preys.Count());
-                        (int carpop, int preypop) = colony.species.Attack(colony.population, preys[randomIndex]);
-                        colony.population = carpop;
-                        preys[randomIndex].population = preypop;
-                        break;
-                    case Fox:
-                        if (round % 3 == 0)
-                        {
-                            colony.Reproduction();
-                        }
-                        List<Colony> preys1 = colonies.Where(col => col.species is Lemming or Rabbit).ToList();
-                        Random random1 = new Random();
-                        int randomIndex1 = random1.Next(0, preys1.Count());
-                        (int carpop1, int preypop1) = colony.species.Attack(colony.population, preys1[randomIndex1]);
-                        colony.population = carpop1;
-                        preys1[randomIndex1].population = preypop1;
-                        break;
-
-                    case Bear:
-                        if (round % 8 == 0)
-                        {
-                            colony.Reproduction();
-                        }
-                        List<Colony> preys2 = colonies.Where(col => col.species is Lemming or Rabbit or Moose).ToList();
-                        Random random2 = new Random();
-                        int randomIndex2 = random2.Next(0, preys2.Count());
-                        (int carpop2, int preypop2) = colony.species.Attack(colony.population, preys2[randomIndex2]);
-                        colony.population = carpop2;
-                        preys2[randomIndex2].population = preypop2;
-                        break;
-
-                    default:
-                        throw new ArgumentException("Illegal Colony!");
-
-
+                    if(colony.species is Lemming)
+                    {
+                        colony.Reproduction();
+                    }
+                    if(colony.species is Rabbit)
+                    {
+                        colony.Reproduction();
+                    }
                 }
-                
+            }
+
+            if (this.round % 3 == 0)
+            {
+                foreach (Colony colony in this.colonies)
+                {
+                    if (colony.species is Owl)
+                    {
+                        colony.Reproduction();
+                    }
+                    if (colony.species is Fox)
+                    {
+                        colony.Reproduction();
+                    }
+                }
+            }
+
+
+            if (this.round % 4 == 0)
+            {
+                foreach (Colony colony in this.colonies)
+                {
+                    if (colony.species is Moose)
+                    {
+                        colony.Reproduction();
+                    }
+                }
+            }
+
+            if (this.round % 8 == 0)
+            {
+                foreach (Colony colony in this.colonies)
+                {
+                    if (colony.species is Bear)
+                    {
+                        colony.Reproduction();
+                    }
+                }
+            }
+            foreach(Colony colony in this.colonies)
+            {
+                if(colony.species is Carnivore)
+                {
+                    Random random = new Random();
+                    List<Colony> preys = colonies.FindAll(colony => colony.species is Prey);
+                    int randomIndex = random.Next(0, preys.Count);
+                    colony.Attack(preys[randomIndex]);
+                }
             }
         }
     }
