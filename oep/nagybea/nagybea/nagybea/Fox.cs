@@ -10,9 +10,13 @@ namespace nagybea
     {
         public Fox() { }
 
-        public override int Reproduce(int pop)
-        {
-            return pop += pop / 4 * 3;
+        public override int Reproduce(int pop, int round)
+        {   
+            if (round % 3 == 0)
+            {
+                return pop += pop / 4 * 3;
+            }
+            return pop;
         }
 
         public override (int, int) Hunt(Colony car, Colony prey)

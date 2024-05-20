@@ -10,14 +10,22 @@ namespace nagybea
     {
         public Moose() { }
 
-        public override int Reproduce(int pop)
+        public override int Reproduce(int pop, int round)
         {
             if (pop >= 200)
             {
                 return 40;
             }
-            double newpop = pop * 1.2;
-            return (int)newpop;
+            else if(round % 4 == 0)
+            {
+                double newpop = pop * 1.2;
+                return (int)newpop;
+            }
+            else
+            {
+                return pop;
+            }
+            
         }
 
         public override (int, int) GetHunted(Bear _, Colony car, Colony prey)

@@ -10,9 +10,13 @@ namespace nagybea
     {
         public Bear() { }
 
-        public override int Reproduce(int pop)
+        public override int Reproduce(int pop, int round)
         {
-            return pop += pop / 4;
+            if(round % 8 == 0)
+            {
+                return pop += pop / 4;
+            }
+            return pop;
         }
 
         public override (int, int) Hunt(Colony car, Colony prey)

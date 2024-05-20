@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("nagybea")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1683b662c3e15e9d666afcd4e74b77d775232a8c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd3dae20011d3a90efdb856d743022f677e19486")]
 [assembly: System.Reflection.AssemblyProductAttribute("nagybea")]
 [assembly: System.Reflection.AssemblyTitleAttribute("nagybea")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

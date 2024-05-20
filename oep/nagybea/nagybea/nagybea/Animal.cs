@@ -13,7 +13,7 @@ namespace nagybea
 
         }
         
-        public virtual int Reproduce(int pop)
+        public virtual int Reproduce(int pop, int round)
         {
             return 0;
         }

@@ -25,61 +25,9 @@ namespace nagybea
 
         private void Simulate()
         {
-            
-            if(this.round % 2 == 0)
-            {
-                foreach(Colony colony in this.colonies)
-                {
-                    if(colony.species is Lemming)
-                    {
-                        colony.Reproduction();
-                    }
-                    if(colony.species is Rabbit)
-                    {
-                        colony.Reproduction();
-                    }
-                }
-            }
-
-            if (this.round % 3 == 0)
-            {
-                foreach (Colony colony in this.colonies)
-                {
-                    if (colony.species is Owl)
-                    {
-                        colony.Reproduction();
-                    }
-                    if (colony.species is Fox)
-                    {
-                        colony.Reproduction();
-                    }
-                }
-            }
-
-
-            if (this.round % 4 == 0)
-            {
-                foreach (Colony colony in this.colonies)
-                {
-                    if (colony.species is Moose)
-                    {
-                        colony.Reproduction();
-                    }
-                }
-            }
-
-            if (this.round % 8 == 0)
-            {
-                foreach (Colony colony in this.colonies)
-                {
-                    if (colony.species is Bear)
-                    {
-                        colony.Reproduction();
-                    }
-                }
-            }
             foreach(Colony colony in this.colonies)
             {
+                colony.Reproduction(round);
                 if(colony.species is Carnivore)
                 {
                     Random random = new Random();
@@ -88,6 +36,83 @@ namespace nagybea
                     colony.Attack(preys[randomIndex]);
                 }
             }
+        }
+
+        public int GetNumberOfCarnivores()
+        {
+            List<Colony> cars = this.colonies.FindAll(col => col.species is Carnivore);
+            int count = 0;
+            foreach(Colony colony in cars)
+            {
+                count += colony.population;
+            }
+            return count;
+        }
+
+        public bool AreAllCarnivoresUnderFour()
+        {
+            List<Colony> cars = this.colonies.FindAll(col => col.species is Carnivore);
+            foreach (Colony colony in cars)
+            {
+                if(colony.population >= 4)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        public List<Animal> GetExtinctAnimals()
+        {
+            List<Animal> result = new List<Animal> ();
+            HashSet<Animal> species = new HashSet<Animal>(this.colonies.Select(col => col.species).ToList());   
+            foreach(Animal animal in species)
+            {
+                bool isAnimalExtinct = IsAnimalExtinct(animal);
+                if (isAnimalExtinct)
+                {
+                    result.Add(animal);
+                }
+            }
+
+            return result;
+        }
+
+        private bool IsAnimalExtinct(Animal animal)
+        {
+            List<Colony> speciesColonies = new();
+            switch (animal)
+            {
+                case Lemming:
+                    speciesColonies = this.colonies.FindAll(col => col.species is Lemming);
+                    break;
+                case Rabbit:
+                    speciesColonies = this.colonies.FindAll(col => col.species is Rabbit);
+                    break;
+                case Moose:
+                    speciesColonies = this.colonies.FindAll(col => col.species is Moose);
+                    break;
+                case Owl:
+                    speciesColonies = this.colonies.FindAll(col => col.species is Owl);
+                    break;
+                case Fox:
+                    speciesColonies = this.colonies.FindAll(col => col.species is Fox);
+                    break;
+                case Bear:
+                    speciesColonies = this.colonies.FindAll(col => col.species is Bear);
+                    break;
+
+            }
+            foreach (Colony colony in speciesColonies)
+            {
+                if (colony.population > 0)
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 }

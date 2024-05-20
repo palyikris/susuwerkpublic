@@ -19,9 +19,9 @@ namespace nagybea
             this.species = species;
         }
 
-        public void Reproduction()
+        public void Reproduction(int round)
         {
-            this.population = species.Reproduce(this.population);
+            this.population = species.Reproduce(this.population, round);
         }
 
         public void Attack(Colony col)
