@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b0drOYYlWqTDtpk88BQeMBe56Z15512qE940Wpv2FPMcL2t5jcx1bqJjDXhMFHSSj238qsbtbujfVXRj/hOcew==",
+  "dgSpecHash": "neUOesHkLazOdKTYygI7jjS79IIINGSK8e1zeaeFf8BZC/h3KX5CsqzVMjmkazWmu+Q/ELBhTSiHfiB/HpJfVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\palyi\\OneDrive\\Desktop\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\UnitTest1\\UnitTest1.csproj",
+  "projectFilePath": "C:\\Users\\palyi\\bullshitBundle\\susuwerkpublic\\oep\\nagybea\\nagybea\\UnitTest1\\UnitTest1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\palyi\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\palyi\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
