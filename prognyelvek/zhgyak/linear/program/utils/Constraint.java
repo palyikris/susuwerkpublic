@@ -49,7 +49,45 @@ public class Constraint {
       throw new IllegalStateException("");
     }
     StringBuilder sb = new StringBuilder();
-    for(int i = 0; i < coeffs.s)
+    for (int i = 0; i < coeffs.length; i++) {
+      String stringBlock = coeffs[i] + vars.get(i).getName();
+      if (i > 0) {
+        if (coeffs[i] == 0) {
+
+        } else if (coeffs[i] == 1) {
+          sb.append(" ");
+          sb.append("+");
+          sb.append(vars.get(i).getName());
+          sb.append(" ");
+
+        } else if (coeffs[i] == -1) {
+          sb.append(" ");
+          sb.append("+");
+          sb.append(vars.get(i).getName());
+          sb.append(" ");
+
+        } else {
+          sb.append(" ");
+          sb.append("+");
+          sb.append(stringBlock);
+          sb.append(" ");
+        }
+      } else {
+        if (coeffs[i] == 0) {
+
+        } else if (coeffs[i] == 1) {
+          sb.append(vars.get(i).getName());
+          sb.append(" ");
+        } else if (coeffs[i] == -1) {
+          sb.append(vars.get(i).getName());
+          sb.append(" ");
+        } else {
+          sb.append(stringBlock);
+          sb.append(" ");
+        }
+      }
+    }
+    return sb.toString();
   }
 
 }
