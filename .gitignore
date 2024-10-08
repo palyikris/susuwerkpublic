@@ -3,3 +3,6 @@
 *lab*/
 *.sh
 *.mp4
+/progtech/bea1/nbproject/private/
+/progtech/bea1/build/
+oldies/**

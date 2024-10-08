@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    #lines{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      margin: 5rem 0;
+    }
+    #lines span{
+      display: block;
+      width: 5rem;
+      border-bottom: 1px solid black;
+    }
+
+    #found p{
+      border: 1px solid black;
+      margin: 0 1rem;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" name="" id="counter" readonly>
+  <button onclick="sub()" id="sub">-</button>
+  <button onclick="add()" id="add">+</button>
+  <hr>
+  <div id="lines"></div>
+  <input type="text" id="letters" > 
+  <div id="found"></div>
+  <div id="mistakes"></div>
+  <div id="result"></div>
+  <script src="domtask.js"></script>
+</body>
+</html>

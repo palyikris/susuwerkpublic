@@ -1,0 +1,10 @@
+1. a. Határozd meg egy adott számokat tartalmazó mátrixban, hogy hány olyan sora van, amely tartalmaz 0 értéket! (1 pont)
+   b. Határozd meg egy adott számokat tartalmazó tömbben hány prímszám szerepel! (1 pont)
+
+2. Készíts egy számlálót komponenst!
+   a. A számláló egy csak olvasható szöveges beviteli mezőből (type="text") és két gombból (plusz, mínusz) áll! A gombok megnyomásával a szöveges beviteli mezőben lévő szám eggyel nő vagy csökken. (2 pont)
+   b. Definiálj a szkriptben egy minimum és egy maximum értéket! Ha a számláló eléri valamelyik értéket, akkor a megfelelő gomb ne legyen elérhető (ne lehessen tovább növelni/csökkenteni az input mezőbe lévő értéket)! (2 pont)
+
+3. Készíts szókitaláló játékot! A gép egy előre tárolt listából válasszon egy szót, majd rajzoljon ki annyi vonalat, ahány betűből áll.
+   Tegyünk ki egy input mezőt is, ahol az egyes betűkre tippelhetünk. Ha eltaláltuk, akkor az eltalált betűket jelenítsük meg a megfelelő helyen.
+   Ha nem találtuk el, akkor számoljuk a hibás találatokat. Ha ez elér egy előre megadott értéket, akkor veszítettünk. Ha a szó összes betűjét ez előtt felfedtük, akkor nyertünk! (4 pont)
