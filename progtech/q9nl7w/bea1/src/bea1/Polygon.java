@@ -10,9 +10,9 @@ package bea1;
  */
 public abstract class Polygon extends Shape{
     
-    private double sideLength;
+    private int sideLength;
     
-    public Polygon(Coord center, double sideLength) throws InvalidInputException {
+    public Polygon(Coord center, int sideLength) throws InvalidInputException {
         super(center);
         if(sideLength < 0){
             throw new InvalidInputException();
@@ -20,7 +20,7 @@ public abstract class Polygon extends Shape{
         this.sideLength = sideLength;
     }
 
-    public double getSideLength() {
+    public int getSideLength() {
         return sideLength;
     }
 
@@ -29,7 +29,7 @@ public abstract class Polygon extends Shape{
      * @param sideLength - the side length of the new polygon
      * @throws InvalidInputException - thrown when given side length is negative
      */
-    public void setSideLength(double sideLength) throws InvalidInputException {
+    public void setSideLength(int sideLength) throws InvalidInputException {
         
         if(sideLength < 0){
             throw new InvalidInputException();

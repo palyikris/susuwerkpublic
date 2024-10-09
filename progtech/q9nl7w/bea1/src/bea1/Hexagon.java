@@ -10,7 +10,7 @@ package bea1;
  */
 public class Hexagon extends Polygon{
     
-    public Hexagon(Coord center, double sideLength) throws InvalidInputException {
+    public Hexagon(Coord center, int sideLength) {
         super(center, sideLength);
     }
     

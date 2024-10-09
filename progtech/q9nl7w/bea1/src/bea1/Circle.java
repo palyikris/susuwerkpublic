@@ -10,9 +10,9 @@ package bea1;
  */
 public class Circle extends Shape{
     
-    private double radius;
+    private int radius;
     
-    public Circle(Coord center, double radius) throws InvalidInputException {
+    public Circle(Coord center, int radius) throws InvalidInputException {
         super(center);
         if(radius < 0){
             throw new InvalidInputException();
@@ -20,7 +20,7 @@ public class Circle extends Shape{
         this.radius = radius;
     }
 
-    public double getRadius() {
+    public int getRadius() {
         return radius;
     }
 
@@ -29,7 +29,7 @@ public class Circle extends Shape{
      * @param radius - a non-negative int for the radius of a circle
      * @throws InvalidInputException - thrown when given radius is negative
      */
-    public void setRadius(double radius) throws InvalidInputException {
+    public void setRadius(int radius) throws InvalidInputException {
         if( radius < 0){
             throw new InvalidInputException();
         }

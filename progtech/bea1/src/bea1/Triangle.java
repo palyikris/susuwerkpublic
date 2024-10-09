@@ -10,7 +10,7 @@ package bea1;
  */
 public class Triangle extends Polygon{
 
-    public Triangle(Coord center, int sideLength) {
+    public Triangle(Coord center, double sideLength) throws InvalidInputException {
         super(center, sideLength);
     }
     

@@ -10,7 +10,7 @@ package bea1;
  */
 public class Square extends Polygon{
     
-    public Square(Coord center, int sideLength) {
+    public Square(Coord center, double sideLength) throws InvalidInputException {
         super(center, sideLength);
     }
     

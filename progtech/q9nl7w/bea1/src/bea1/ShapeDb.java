@@ -41,20 +41,19 @@ public class ShapeDb {
            Shape shape;
            switch (sc.next()) {
                case "C":
-                   shape = new Circle(new Coord(sc.nextDouble(), sc.nextDouble()), sc.nextDouble());
+                   shape = new Circle(new Coord(sc.nextInt(), sc.nextInt()), sc.nextInt());
                    System.out.println("Read a Circle!");
                    break;
                case "T":
-                   shape = new Triangle(new Coord(sc.nextDouble(), sc.nextDouble()), sc.nextDouble());
+                   shape = new Triangle(new Coord(sc.nextInt(), sc.nextInt()), sc.nextInt());
                    System.out.println("Read a Triangle!");
                    break;
                case "S":
-                   shape = new Square(new Coord(sc.nextDouble(), sc.nextDouble()), sc.nextDouble());
+                   shape = new Square(new Coord(sc.nextInt(), sc.nextInt()), sc.nextInt());
                    System.out.println("Read a Square!");
                    break;
                case "H":
-                   shape = new Hexagon(new Coord(sc.nextDouble(), sc.nextDouble()), sc.nextDouble());
-                   
+                   shape = new Hexagon(new Coord(sc.nextInt(), sc.nextInt()), sc.nextInt());
                    System.out.println("Read a Hexagon!");
                    break;
                default:

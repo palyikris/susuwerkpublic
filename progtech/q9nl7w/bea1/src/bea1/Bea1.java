@@ -19,7 +19,7 @@ public class Bea1 {
 
         ShapeDb database = new ShapeDb();
         try {
-            database.read("edge_case_10.txt");
+            database.read("shapes.txt");
         } catch (FileNotFoundException ex) {
             System.out.println("File not found!");
             System.exit(-1);
